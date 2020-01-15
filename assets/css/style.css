@@ -4580,7 +4580,6 @@ ul, ol {
   margin-left: 30px; }
 
 ul {
-  display: list-item;
   color: #ADE0B9; }
 
 li {
@@ -4644,12 +4643,12 @@ pre, code {
   .theme--dark code {
     background-color: #1E2227;
     color: #DAE4ED;
-    font-family: "Courier New", "Gamja Flower";
+    font-family: Consolas, "Gamja Flower";
     font-style: normal; }
   .theme--light pre, .theme--light code {
     background-color: #1E2227;
     color: #DAE4ED;
-    font-family: "Courier New", "Gamja Flower";
+    font-family: Consolas, "Gamja Flower";
     font-style: normal; }
 
 code {
@@ -5204,7 +5203,7 @@ input:checked + .toggle {
  * Syntax highlighting styles
  */
 .highlight {
-  font-family: "Courier New", "Gamja Flower";
+  font-family: Consolas, "Gamja Flower";
   line-height: 1.3;
   font-weight: 400; }
   .highlight .c {

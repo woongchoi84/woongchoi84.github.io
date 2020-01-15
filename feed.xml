@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://woongchoi84.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://woongchoi84.github.io/" rel="alternate" type="text/html" /><updated>2020-01-15T15:56:38+09:00</updated><id>https://woongchoi84.github.io/feed.xml</id><title type="html">Woong’s Blog</title><subtitle>I'm a Creep; I'm a Weirdo.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://woongchoi84.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://woongchoi84.github.io/" rel="alternate" type="text/html" /><updated>2020-01-15T18:21:33+09:00</updated><id>https://woongchoi84.github.io/feed.xml</id><title type="html">Woong’s Blog</title><subtitle>I'm a Creep; I'm a Weirdo.
 </subtitle><author><name>Woong</name></author><entry><title type="html">[Blog] CSS Modifications</title><link href="https://woongchoi84.github.io/2020/01/15/post-blog-cssmodifications.html" rel="alternate" type="text/html" title="[Blog] CSS Modifications" /><published>2020-01-15T00:00:00+09:00</published><updated>2020-01-15T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/15/post-blog-cssmodifications</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/15/post-blog-cssmodifications.html">&lt;h1 id=&quot;head-color&quot;&gt;Head Color&lt;/h1&gt;
 
 &lt;h2 id=&quot;_sassdash_basecss-file&quot;&gt;‘_sass/dash/_base.css’ file&lt;/h2&gt;
@@ -323,7 +323,231 @@ with lazy continuation.&lt;/p&gt;
       &lt;p&gt;Footnote text. &lt;a href=&quot;#fnref:second&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:second:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Woong</name></author><category term="Blog" /><summary type="html">h1 Heading 8-) h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading</summary></entry><entry><title type="html">[Linux] WSL (Windows-Subsystem-for-Linux) 기반 개발 환경 구축 : 01 (Not Completed)</title><link href="https://woongchoi84.github.io/2020/01/14/post-linux-wsl-00.html" rel="alternate" type="text/html" title="[Linux] WSL (Windows-Subsystem-for-Linux) 기반 개발 환경 구축 : 01 (Not Completed)" /><published>2020-01-14T00:00:00+09:00</published><updated>2020-01-14T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/14/post-linux-wsl-00</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/14/post-linux-wsl-00.html">&lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2019/06/08/05/48/linux-4259595_1280.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Woong</name></author><category term="Blog" /><summary type="html">h1 Heading 8-) h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading</summary></entry><entry><title type="html">[Git] GitHub 사용법 (for Linux)</title><link href="https://woongchoi84.github.io/2020/01/15/post-productive-howtousegithub.html" rel="alternate" type="text/html" title="[Git] GitHub 사용법 (for Linux)" /><published>2020-01-15T00:00:00+09:00</published><updated>2020-01-15T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/15/post-productive-howtousegithub</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/15/post-productive-howtousegithub.html">&lt;h1 id=&quot;overall-contents&quot;&gt;Overall Contents&lt;/h1&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+  &lt;li&gt;https://github.com/ 에서 계정 만들기&lt;/li&gt;
+  &lt;li&gt;사이트에서 저장소 (리포지토리, repository) 만들기&lt;/li&gt;
+  &lt;li&gt;클라이언트 (리눅스) 에서 내 저장소와 연결 정보 만들기&lt;/li&gt;
+  &lt;li&gt;저장소에 파일 저장하기 (upload)&lt;/li&gt;
+  &lt;li&gt;저장소에서 파일 내려받기 (download)&lt;/li&gt;
+  &lt;li&gt;추가 사항!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;1-httpsgithubcom-에서-계정-만들기&quot;&gt;1. https://github.com/ 에서 계정 만들기&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;--링크&quot;&gt;- 링크&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;https://github.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;--회원가입&quot;&gt;- 회원가입&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sign In: 로그인&lt;/li&gt;
+  &lt;li&gt;Sign Out: 회원가입&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-사이트에서-저장소-리포지토리-repository-만들기&quot;&gt;2. 사이트에서 저장소 (리포지토리, repository) 만들기&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;--사이트-화면에서-repositories-옆에-new-버튼-클릭&quot;&gt;- 사이트 화면에서 Repositories 옆에 New 버튼 클릭&lt;/h3&gt;
+
+&lt;h3 id=&quot;--저장소-repository-이름-선정&quot;&gt;- 저장소 (repository) 이름 선정&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.ibb.co/yFDJwvk/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;woongchoi84/&lt;/code&gt; 오른쪽 위치에 원하는 &lt;code class=&quot;highlighter-rouge&quot;&gt;저장소 이름&lt;/code&gt;을 적어넣고, 맨 아래 &lt;code class=&quot;highlighter-rouge&quot;&gt;Create repository&lt;/code&gt; 버튼 클릭&lt;/p&gt;
+
+&lt;p&gt;(아래에 몇가지 옵션이 있는데 건드리지 말자.)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Public: 공개 (아무나 볼수 있다, 무료)&lt;/li&gt;
+  &lt;li&gt;Private: 비공개 (1개 공짜, 그 이상은 유료)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3-클라이언트-리눅스-에서-내-저장소와-연결-정보-만들기&quot;&gt;3. 클라이언트 (리눅스) 에서 내 저장소와 연결 정보 만들기&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;git-설치-install&quot;&gt;Git 설치 (Install)&lt;/h3&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;터미널에 &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; 입력 시 설치하라고 나오면&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;커맨드를 통해 설치 할 수 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;git-초기-설정-환경-설정&quot;&gt;Git 초기 설정 (환경 설정)&lt;/h3&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;git config --global user.name woongchoi84
+git config --global user.email woongchoi84@gmail.com
+git config --global --list
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;리눅스 입장에서는 내 깃허브 정보를 알리가 없다. 처음 한번 입력해주자!.&lt;/p&gt;
+
+&lt;h3 id=&quot;github의-저장소와-동기화&quot;&gt;GitHub의 저장소와 동기화&lt;/h3&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;git init
+git remote add origin https://github.com/woongchoi84/test
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;git init : 실행한 폴더에 &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; 폴더를 만든다. 이 안에 git에 필요한 정보들이 업데이트 된다.&lt;/li&gt;
+  &lt;li&gt;git remote  ~~ : https://github.com/&lt;code class=&quot;highlighter-rouge&quot;&gt;깃허브 아이디&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;저장소 이름&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;[주의할 점]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git init&lt;/code&gt; 혹은 &lt;code class=&quot;highlighter-rouge&quot;&gt;git clone repo_url&lt;/code&gt; 등의 명령어를 사용하는 경우 &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; 폴더가 생기는데, 이게 하위 디렉토리 같은 곳에 있으면 문제가 된다.
+뒤에서 설명할 &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt; 혹은 &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt; 이 안되는 경우 리눅스 &lt;code class=&quot;highlighter-rouge&quot;&gt;tree&lt;/code&gt; 명령어를 통해 불필요한 &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; 폴더의 유무를 체크해보자!&lt;/p&gt;
+
+&lt;h2 id=&quot;4-저장소에-파일-저장하기-upload&quot;&gt;4. 저장소에 파일 저장하기 (upload)&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;git add .
+git commit -m &quot;first commit&quot;
+git push -u origin master
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;git add : 저장소에 올릴 파일을 정하는 것 (&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;의 의미는 전체 파일)&lt;/li&gt;
+  &lt;li&gt;git commit : 저장소에 올리는데 설명을 붙여주는 것 (귀찮지만 꼭 해야한다)&lt;/li&gt;
+  &lt;li&gt;git push : 이 명령어를 통해 실제로 업로드&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;5-저장소에서-파일-내려받기-download&quot;&gt;5. 저장소에서 파일 내려받기 (download)&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;첫번째-방법-git-clone&quot;&gt;첫번째 방법: git clone&lt;/h3&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;git clone repo_url
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이 명령어는 위에서 했던 과정없이 바로 수행 가능하며 단지 깃허브 저장소 (repo_url)에서 파일을 복사해온다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;유용한 팁 (., 점 유무에 주의)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone repo_url .&lt;/code&gt; : 저장소에 있는 파일을 현재 경로로 가져온다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;리눅스 명령어와 비교해보면 &lt;code class=&quot;highlighter-rouge&quot;&gt;cp -rf ../source_dir/* .&lt;/code&gt;와 같은 동작이 수행된다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone repo_url&lt;/code&gt;   : 저장소 폴더 통째로 현재 경로로 가져온다. 즉, 저장소 이름의 폴더명이 현재 경로에 생성된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;리눅스 명령어와 비교해보면 &lt;code class=&quot;highlighter-rouge&quot;&gt;cp -rf ../source_dir .&lt;/code&gt;와 같은 동작이 수행된다.&lt;/p&gt;
+
+&lt;h3 id=&quot;두번째-방법-git-pull&quot;&gt;두번째 방법: git pull&lt;/h3&gt;
+
+&lt;p&gt;이 명령어를 쓰게되는 상황은 다음과 같다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;A씨는 출근해서 이것저것 코딩을 하고 개발한 코드를 &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;를 통해 저장소에 업로드하였다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;퇴근을 하고 일을 더하고 싶어진 A씨는 &lt;code class=&quot;highlighter-rouge&quot;&gt;git clone&lt;/code&gt;을 통해 회사에서 개발한 코드를 집에 있는 컴퓨터로 복사한 후 추가적으로 코드를 업데이트 하였다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;잠들기 전 집에서 개발한 코드를 &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;를 통해 저장소에 업로드하였다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;다음 날 출근한 A씨가 이어서 코딩을 하기 위해서는 무엇을 해야할까?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;git pull
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;작업 중인 경로에 가서 위 명령어를 치면 &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; 폴더의 내용을 기반으로 저장소와 내 로컬 (리눅스) 간의 연결 정보를 파악하여 저장소에 있는 최신 코드로 내 로컬 파일들을 업데이트한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;6-추가-사항&quot;&gt;6. 추가 사항!&lt;/h2&gt;
+
+&lt;h3 id=&quot;추가-사항을-넣은-이유는-다음과-같은-상황-때문이다&quot;&gt;추가 사항을 넣은 이유는 다음과 같은 상황 때문이다.&lt;/h3&gt;
+
+&lt;p&gt;두괄식으로 요약하자면,&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;작업: 로컬에서 코드 개발&lt;/li&gt;
+  &lt;li&gt;업로드: 로컬 (리눅스) -&amp;gt; 저장소&lt;/li&gt;
+  &lt;li&gt;다운로드: 저장소 -&amp;gt; 로컬 (리눅스)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;위의 1-2-3-1-2-3-1-2-3-… 순서가 어그러지면 문제가 발생한다.&lt;/p&gt;
+
+&lt;p&gt;아래는 발생할 수 있는 몇가지 케이스이다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Case I&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;A씨는 출근해서 이것저것 코딩을 하고 개발한 코드를 &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;를 통해 저장소에 업로드하였다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;퇴근을 하고 일을 더하고 싶어진 A씨는 &lt;code class=&quot;highlighter-rouge&quot;&gt;git clone&lt;/code&gt;을 통해 회사에서 개발한 코드를 집에 있는 컴퓨터로 복사한 후 추가적으로 코드를 업데이트 하였다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;잠들기 전 집에서 개발한 코드를 깜빡하고 업로드 못하였다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;다음 날 출근한 A씨가 깜빡하고 &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;를 못한걸 기억하고 어쩔 수 없이 다시 중간서부터 코드를 이어서 짜나간다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A씨는 퇴근 전 &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;를 통해 저장소에 업로드하고 퇴근하였다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;집에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt;을 하는 경우 어떻게 될까?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;이 때, Merge가 필요하다고 하면서 뭔가 이상한 메시지를 뿌린다. 뒤죽 박죽이 되버린 것이다.&lt;/p&gt;
+
+&lt;p&gt;Git에 대해 초심자의 경우 그냥 새로 &lt;code class=&quot;highlighter-rouge&quot;&gt;git clone&lt;/code&gt;을 통해 회사에서 마지막으로 개발한 코드와 Sync를 맞추자.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Case II&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;A씨는 출근해서 이것저것 코딩을 하고 개발한 코드를 &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;를 통해 저장소에 업로드하였다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;퇴근을 하고 일을 더하고 싶어진 A씨는 &lt;code class=&quot;highlighter-rouge&quot;&gt;git clone&lt;/code&gt;을 통해 회사에서 개발한 코드를 집에 있는 컴퓨터로 복사한 후 추가적으로 코드를 업데이트 하였다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;잠들기 전 집에서 개발한 코드를 &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;를 통해 저장소에 업로드하였다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;다음 날 출근한 A씨는 어제 집에서 짠 코드가 엉망이었음을 깨닫고 그냥 회사 컴퓨터에 남아있는 코드에서 이어서 작업을 하기로 한다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;퇴근 전 &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;를 하는 경우 어떻게 될까?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;이 때도, Merge가 필요하다고 하면서 뭔가 이상한 메시지를 뿌린다.&lt;/p&gt;
+
+&lt;p&gt;Git에 대해 초심자의 경우,&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;git push -u origin +master
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;master 앞에 &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; 기호를 넣어 강제로 로컬에 있는 자료를 저장소로 업로드 해버리자!.&lt;/p&gt;
+
+&lt;p&gt;다음에는 윈도우 설치 프로그램 기준 깃 사용법에 대해 포스팅 할 예정이다.&lt;/p&gt;</content><author><name>Woong</name></author><category term="Git" /><summary type="html">Overall Contents https://github.com/ 에서 계정 만들기 사이트에서 저장소 (리포지토리, repository) 만들기 클라이언트 (리눅스) 에서 내 저장소와 연결 정보 만들기 저장소에 파일 저장하기 (upload) 저장소에서 파일 내려받기 (download) 추가 사항!</summary></entry><entry><title type="html">[Linux] WSL (Windows-Subsystem-for-Linux) 기반 개발 환경 구축 : 01 (Not Completed)</title><link href="https://woongchoi84.github.io/2020/01/14/post-linux-wsl-00.html" rel="alternate" type="text/html" title="[Linux] WSL (Windows-Subsystem-for-Linux) 기반 개발 환경 구축 : 01 (Not Completed)" /><published>2020-01-14T00:00:00+09:00</published><updated>2020-01-14T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/14/post-linux-wsl-00</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/14/post-linux-wsl-00.html">&lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2019/06/08/05/48/linux-4259595_1280.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;설치-windows-10-이상에서만-가능&quot;&gt;설치 (Windows 10 이상에서만 가능!)&lt;/h1&gt;
 
@@ -929,36 +1153,4 @@ this prayer i sing for you
 
 &lt;p&gt;&lt;img src=&quot;https://i.ibb.co/1mTH1Kp/googlesearchconsole.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;4명은 마우스를 잘못 누른것일까?&lt;/p&gt;</content><author><name>Woong</name></author><category term="Blog" /><category term="Google" /><summary type="html"></summary></entry><entry><title type="html">[Blog] 지킬 (jekyll) 블로그에 유튜브 삽입</title><link href="https://woongchoi84.github.io/2020/01/10/post-blog-%EC%A7%80%ED%82%AC%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%9C%A0%ED%8A%9C%EB%B8%8C%EC%82%BD%EC%9E%85.html" rel="alternate" type="text/html" title="[Blog] 지킬 (jekyll) 블로그에 유튜브 삽입" /><published>2020-01-10T00:00:00+09:00</published><updated>2020-01-10T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/10/post-blog-%EC%A7%80%ED%82%AC%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%9C%A0%ED%8A%9C%EB%B8%8C%EC%82%BD%EC%9E%85</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/10/post-blog-%EC%A7%80%ED%82%AC%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%9C%A0%ED%8A%9C%EB%B8%8C%EC%82%BD%EC%9E%85.html">&lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2017/06/23/02/35/youtube-2433301_1280.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;테스트1---로컬-1270014000-안되고-깃-푸쉬하면-잘됨&quot;&gt;테스트1 - 로컬 (127.0.0.1:4000/ 안되고 깃 푸쉬하면 잘됨)&lt;/h1&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;깃허브에서 지킬(jekyll)을 사용한 블로그에  영상 삽입하기&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://devlog.jwgo.kr/2018/04/16/how-to-insert-youtube-into-jekyll/&quot;&gt;테스트에 참조한 링크1&lt;/a&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/216_wkEgPg4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;로컬에서는 화면은 정상으로 보이는데,&lt;/p&gt;
-
-&lt;p&gt;플레이버튼을 누르면 재생이 안된다.&lt;/p&gt;
-
-&lt;p&gt;웹상에서는 정상동작하는 것 확인!&lt;/p&gt;
-
-&lt;h1 id=&quot;테스트2---&quot;&gt;테스트2 - ()&lt;/h1&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Jekyll YouTube Embed Plugin · GitHub&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://gist.github.com/joelverhagen/1805814&quot;&gt;테스트에 참조한 링크2&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;이 방법도 로컬에서는 화면은 정상으로 보이는데,&lt;/p&gt;
-
-&lt;p&gt;플레이버튼을 누르면 재생이 안된다.&lt;/p&gt;
-
-&lt;p&gt;웹상에서도 안됨!&lt;/p&gt;
-
-&lt;p&gt;(뭔가 빼먹은 것 같지만 일단 되는 방법이 있으니 스킵해야겠다.)&lt;/p&gt;</content><author><name>Woong</name></author><category term="Blog" /><category term="Jekyll" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;4명은 마우스를 잘못 누른것일까?&lt;/p&gt;</content><author><name>Woong</name></author><category term="Blog" /><category term="Google" /><summary type="html"></summary></entry></feed>
