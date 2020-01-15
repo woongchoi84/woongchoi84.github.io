@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>[Linux] 셔뱅(shebang) 사용법 | Woong’s Blog</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="[Linux] 셔뱅(shebang) 사용법" />
+<meta name="author" content="Woong" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I’m a Creep; I’m a Weirdo." />
+<meta property="og:description" content="I’m a Creep; I’m a Weirdo." />
+<meta property="og:site_name" content="Woong’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-05T00:00:00+09:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"/2020/01/05/post-linux-%EC%85%94%EB%B1%85.html","headline":"[Linux] 셔뱅(shebang) 사용법","dateModified":"2020-01-05T00:00:00+09:00","datePublished":"2020-01-05T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2020/01/05/post-linux-%EC%85%94%EB%B1%85.html"},"author":{"@type":"Person","name":"Woong"},"description":"I’m a Creep; I’m a Weirdo.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Woong's Blog" /><link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Serif+KR|Noto+Sans+KR|Nanum+Myeongjo|Nanum+Pen+Script|Sunflower|Cute+Font|Nanum+Brush+Script|Do+Hyeon|Black+Han+Sans|Gaegu|Gamja+Flower|Poor+Story|Hi+Melody|Black+And+White+Picture|Jua|Song+Myung|Stylish|Yeon+Sung" rel="stylesheet" type="text/css">
+</head>
+<body><div class="site-header">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/">Woong&#39;s Blog<b class="command_prompt"></b><b class="blinking_cursor">_</b></a>
+    <span class="social_links">
+        <a class="color-cyan-hover" href="https://twitter.com/woongchoi84"><i class="fab fa-twitter-square"></i></a><a class="color-purple-hover" href="https://github.com/woongchoi84"><i class="fab fa-github-square"></i></a>
+    </span>
+  </div>
+</div>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="author-box">
+
+<img src="https://gravatar.com/avatar/4a8702b1bdf3853f2fd5d4442bb4a199?s=256" class="author-avatar" />
+
+I'm a Creep; I'm a Weirdo.
+
+</div>
+
+<div class="post">
+  <h1 class="post-title">[Linux] 셔뱅(shebang) 사용법</h1>
+  
+  <div class="post-tags">
+      
+      <a class="tag" href="/tag/linux/">Linux</a>
+      
+      <a class="tag" href="/tag/setup/">Setup</a>
+      
+  </div>
+  
+  <div class="post-date">Published on 05 Jan 2020</div>
+  
+  <p><img src="https://cdn.pixabay.com/photo/2017/04/27/01/31/question-2264166_1280.png" alt="" /></p>
+
+<h1 id="셔뱅shebang의-의미">셔뱅(shebang)의 의미</h1>
+
+<p>운영체제 입장에서는 스크립트 파일이</p>
+
+<p>어떤 문법으로 짜여진건지 모른다.</p>
+
+<p>(예: 이게 파이썬 코드야, 쉘 코드야?)</p>
+
+<p>이걸 알려주기위해 스크립트 파일 첫줄에</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#! /bin/bash</span>
+</code></pre></div></div>
+<p>와 같이 인터프리팅 정보를 주는것을 셔뱅이라 한다.</p>
+
+<h2 id="위키피디아-설명"><a href="https://ko.wikipedia.org/wiki/%EC%85%94%EB%B1%85">위키피디아</a> 설명</h2>
+
+<blockquote>
+  <p>셔뱅(shebang)은 해시 기호와 느낌표(#!)로 이루어진 문자 시퀀스로, 스크립트의 맨 처음에 온다. 샤-뱅(sha-bang)[1][2][3], 해시뱅(hashbang)[4][5], 파운드-뱅(pound-bang)[2][6], 해시-플링(hash-pling)[2][7], 크런치뱅(crunchbang)이라고도 한다. 유닉스 계열 운영 체제에서 셔뱅이 있는 스크립트는 프로그램으로서 실행되며, 프로그램 로더가 스크립트의 첫 줄의 나머지 부분을 인터프리터 지시자(interpreter directive)로 구문 분석한다. 즉, 지정된 인터프리터 프로그램이 대신 실행되어 스크립트의 실행을 시도할 때 처음 사용되었던 경로를 인수로서 넘겨주게 된다.[8] 이를테면 스크립트의 경로가 path/to/script이고 다음의 줄로 시작한다면: <code class="highlighter-rouge"><span class="c">#!/bin/sh</span></code> 프로그램 로더는 프로그램 /bin/sh를 대신 실행하되 path/to/script를 첫 번째 인수로 넘겨준다. 셔뱅 줄은 일반적으로 인터프리터에 의해 무시되는데 그 까닭은 “#” 문자가 수많은 스크립트 언어에서 주석 표시자이기 때문이다. 스킴처럼 해시 마크를 주석 시작으로 사용하지 않는 일부 언어 인터프리터들은 목적에 맞게 셔뱅 줄을 무시하기도 한다. 다른 해결 방안으로는 전처리기에 의존하여 스크립트의 나머지 부분이 컴파일러나 인터프리터에 넘겨지기 전에 셔뱅 줄을 제거하거나 평가하게끔 하는 방법이다. 이를테면 여러 운영 체제에서 프리 파스칼로 작성된 프로그램을 실행할 수 있도록 하는 InstantFPC의 경우가 그러하다.[9]</p>
+</blockquote>
+
+<h1 id="스크립트-파일-사용-예제">스크립트 파일 사용 예제</h1>
+
+<p>특정 스크립트 파일을 파이썬 코드로 작성하였다고 가정하자.</p>
+
+<p>이때 아래와 같이 두 가지 스크립트 파일 실행이 가능하다.</p>
+
+<h2 id="1-쌩으로-스크립트-파일-실행">1. 쌩으로 스크립트 파일 실행</h2>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="o">&gt;</span>python script_file
+</code></pre></div></div>
+
+<p>이렇게 실행해도 되지만,</p>
+
+<p>자주 사용하는 스크립트의 경우 아래가 훨~씬 편하다.</p>
+
+<h2 id="2-셔뱅--파일-실행">2. 셔뱅 + 파일 실행</h2>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="o">&gt;</span>which python
+<span class="go">/usr/bin/python
+</span></code></pre></div></div>
+
+<p><code class="highlighter-rouge">which</code> 명령어로 python 경로를 알아낸후 스크립트 파일 첫줄에</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">#</span><span class="o">!</span> /usr/bin/python
+</code></pre></div></div>
+
+<p>추가 후</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="o">&gt;</span><span class="nb">chmod</span> +x script_file
+</code></pre></div></div>
+
+<p>로 실행 권한 부여 후</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="o">&gt;</span>./script_file
+</code></pre></div></div>
+
+<p>이렇게 <code class="highlighter-rouge">'쩜+슬러쉬+파일명'</code>으로 실행가능하다.</p>
+
+</div>
+
+
+<div class="comments">
+<div id="disqus_thread"></div>
+<script>
+ var disqus_config = function () {
+     this.page.url = '/2020/01/05/post-linux-%EC%85%94%EB%B1%85.html';
+     this.page.identifier = '/2020/01/05/post-linux-셔뱅';
+     this.page.title = '[Linux] 셔뱅(shebang) 사용법';
+ };
+
+ (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+     var d = document, s = d.createElement('script');
+
+     s.src = '//woongchoi84.disqus.com/embed.js';
+
+     s.setAttribute('data-timestamp', +new Date());
+     (d.head || d.body).appendChild(s);
+ })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+
+
+<div class="related">
+  <h2>related posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2020/01/15/post-blog-markdowntest.html">
+            [Blog] Markdown & Option Test
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2020/01/15/post-blog-cssmodifications.html">
+            [Blog] CSS Modifications
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2020/01/14/post-productive-gitclone.html">
+            [Productive] GitHub Clone 할 때 폴더 째 혹은 내용물만 가져오기
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+  
+  <h2>all tags</h2>
+  <div class="tag-cloud"><a href="/tag/blog/" class="set-5">Blog</a> <a href="/tag/clip/" class="set-1">Clip</a> <a href="/tag/crawling/" class="set-1">Crawling</a> <a href="/tag/debug/" class="set-1">Debug</a> <a href="/tag/engineer/" class="set-1">Engineer</a> <a href="/tag/git/" class="set-1">Git</a> <a href="/tag/google/" class="set-1">Google</a> <a href="/tag/jekyll/" class="set-1">Jekyll</a> <a href="/tag/linux/" class="set-5">Linux</a> <a href="/tag/music/" class="set-3">Music</a> <a href="/tag/ppt/" class="set-1">PPT</a> <a href="/tag/place/" class="set-1">Place</a> <a href="/tag/productive/" class="set-2">Productive</a> <a href="/tag/python/" class="set-1">Python</a> <a href="/tag/setup/" class="set-4">Setup</a> <a href="/tag/wsl/" class="set-1">WSL</a> <a href="/tag/windows/" class="set-1">Windows</a></div>
+  
+
+
+
+      </div>
+    </main><footer class="site-footer">
+  <div class="wrapper">
+    <div class="credits"><a href="https://github.com/bitbrain/jekyll-dash">dash</a> theme for Jekyll by <a href="https://github.com/bitbrain">bitbrain</a> made with <i class="fas fa-heart"></i><div class="toggleWrapper">
+    <input type="checkbox" class="dn" id="theme-toggle" onclick="modeSwitcher()" checked />
+    <label for="theme-toggle" class="toggle">
+    <span class="toggle__handler">
+      <span class="crater crater--1"></span>
+      <span class="crater crater--2"></span>
+      <span class="crater crater--3"></span>
+    </span>
+        <span class="star star--1"></span>
+        <span class="star star--2"></span>
+        <span class="star star--3"></span>
+        <span class="star star--4"></span>
+        <span class="star star--5"></span>
+        <span class="star star--6"></span>
+    </label>
+</div>
+<script type="text/javascript">
+const theme = localStorage.getItem('theme');
+if (theme === 'undefined') {
+   theme = "dark";
+}
+if (theme === "dark") {
+	document.documentElement.setAttribute('data-theme', 'dark');
+} else {
+    document.documentElement.setAttribute('data-theme', 'light');
+}
+const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
+
+function activateDarkTheme() {
+    document.getElementById('theme-toggle').checked = true;
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.documentElement.classList.add('theme--dark');
+    document.documentElement.classList.remove('theme--light');
+	document.getElementById("theme-toggle").className = 'light';
+	window.localStorage.setItem('theme', 'dark');
+}
+
+function activateLightTheme() {
+    document.getElementById('theme-toggle').checked = false;
+    document.documentElement.setAttribute('data-theme', 'light');
+    document.documentElement.classList.add('theme--light');
+    document.documentElement.classList.remove('theme--dark');
+	document.getElementById("theme-toggle").className = 'dark';
+	window.localStorage.setItem('theme', 'light');
+}
+
+if (theme === "dark") {
+    activateDarkTheme();
+} else if (theme === "light") {
+    activateLightTheme();
+} else if  (userPrefers === "light") {
+    activateDarkTheme();
+} else {
+    activateDarkTheme();
+}
+
+function modeSwitcher() {
+	let currentMode = document.documentElement.getAttribute('data-theme');
+	if (currentMode === "dark") {
+	    activateLightTheme();
+	} else {
+	    activateDarkTheme();
+	}
+}
+</script></div>
+  </div>
+</footer>
+
+
+<script>
+      window.FontAwesomeConfig = {
+        searchPseudoElements: true
+      }
+    </script>
+  </body>
+
+</html>
