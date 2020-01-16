@@ -19,7 +19,7 @@
 {"@type":"BlogPosting","url":"https://woongchoi84.github.io/2020/01/12/post-python-django00.html","headline":"[Python] Django: Django로 홈페이지를 만들어보자 #1","dateModified":"2020-01-12T00:00:00+09:00","datePublished":"2020-01-12T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://woongchoi84.github.io/2020/01/12/post-python-django00.html"},"author":{"@type":"Person","name":"Woong"},"description":"I’m a Creep; I’m a Weirdo.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://woongchoi84.github.io/feed.xml" title="Woong's Blog" /><link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Serif+KR|Noto+Sans+KR|Nanum+Myeongjo|Nanum+Pen+Script|Sunflower|Cute+Font|Nanum+Brush+Script|Do+Hyeon|Black+Han+Sans|Gaegu|Gamja+Flower|Poor+Story|Hi+Melody|Black+And+White+Picture|Jua|Song+Myung|Stylish|Yeon+Sung" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://woongchoi84.github.io/feed.xml" title="Woong's Blog" /><link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono|Nanum+Myeongjo:400|Nanum+Myeongjo:400,700,800" rel="stylesheet" type="text/css">
 </head>
 <body><div class="site-header">
   <div class="wrapper">
@@ -54,21 +54,26 @@ I'm a Creep; I'm a Weirdo.
   
   <p><img src="https://cdn.pixabay.com/photo/2014/05/07/15/19/django-339744_1280.png" alt="" /></p>
 
-<h1 id="django장고-설치-및-초기-설정">Django(장고) 설치 및 초기 설정</h1>
+<h3 id="django장고-설치-및-초기-설정">Django(장고) 설치 및 초기 설정</h3>
+<hr />
 
-<h2 id="django-설치-wsl-기준-ubuntu로-봐도-무방할듯">django 설치 (WSL 기준, Ubuntu로 봐도 무방할듯)</h2>
+<ul>
+  <li>django 설치 (WSL 기준, Ubuntu로 봐도 무방할듯)</li>
+</ul>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="o">&gt;</span><span class="nb">sudo </span>pip3 <span class="nb">install </span>django 
 </code></pre></div></div>
 
 <p>의외로 시간이 좀 걸린다.</p>
 
-<h2 id="새-프로젝트-만들기">새 프로젝트 만들기</h2>
-
-<h3 id="main-이라는-프로젝트-생성-이름은-정하기-나름">main 이라는 프로젝트 생성 (이름은 정하기 나름!)</h3>
+<ul>
+  <li>새 프로젝트 만들기</li>
+</ul>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="o">&gt;</span>django-admin startproject main
 </code></pre></div></div>
+
+<p>main 이라는 프로젝트 생성 (이름은 정하기 나름!)</p>
 
 <p>아래와 같은 Tree 구조의 폴더가 생성된다.</p>
 
@@ -81,7 +86,9 @@ I'm a Creep; I'm a Weirdo.
 └── manage.py
 </span></code></pre></div></div>
 
-<h2 id="app-생성">App 생성</h2>
+<ul>
+  <li>App 생성</li>
+</ul>
 
 <p><code class="highlighter-rouge">manage.py</code> 가 있는 main 폴더에서 다음 명령어 실행</p>
 
@@ -90,9 +97,11 @@ I'm a Creep; I'm a Weirdo.
 
 <p><code class="highlighter-rouge">timeline</code>이라는 이름도 정하기 나름이다.</p>
 
-<h2 id="설정-파일-변경">설정 파일 변경</h2>
+<ul>
+  <li>설정 파일 변경</li>
+</ul>
 
-<h3 id="mainmainsettingpy-수정">‘main/main/setting.py’ 수정</h3>
+<p><code class="highlighter-rouge">main/main/setting.py</code> 수정</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s">'django.contrib.admin'</span><span class="p">,</span>
@@ -115,7 +124,9 @@ I'm a Creep; I'm a Weirdo.
 
 <p>위와 같이 주석이 달린 부분을 수정하자!</p>
 
-<h2 id="모델-timelinemodelpy-수정">모델 (timeline/model.py) 수정</h2>
+<ul>
+  <li>모델 (timeline/model.py) 수정</li>
+</ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
 <span class="kn">from</span> <span class="nn">django.utils</span> <span class="kn">import</span> <span class="n">timezone</span>
@@ -130,17 +141,21 @@ I'm a Creep; I'm a Weirdo.
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span>
 </code></pre></div></div>
 
-<h2 id="모델이-변경되었음을-알리자">모델이 변경되었음을 알리자</h2>
+<ul>
+  <li>모델이 변경되었음을 알리자</li>
+</ul>
 
-<h3 id="migration-실행">Migration 실행</h3>
+<p>Migration 실행</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="o">&gt;</span>python3 manage.py makemigrations timeline
 <span class="gp">$</span><span class="o">&gt;</span>python3 manage.py migrate
 </code></pre></div></div>
 
-<h2 id="관리자-계정-추가">관리자 계정 추가</h2>
+<ul>
+  <li>관리자 계정 추가</li>
+</ul>
 
-<h3 id="blogadminpy-파일-수정">‘blog/admin.py’ 파일 수정</h3>
+<p><code class="highlighter-rouge">blog/admin.py</code> 파일 수정</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.contrib</span> <span class="kn">import</span> <span class="n">admin</span>
 <span class="k">from</span><span class="o">.</span><span class="n">models</span> <span class="kn">import</span> <span class="nn">Post</span>
@@ -148,7 +163,9 @@ I'm a Creep; I'm a Weirdo.
 <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">Post</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>admin 계정 생성</p>
+<ul>
+  <li><code class="highlighter-rouge">admin</code> 계정 생성</li>
+</ul>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">python3 manage.py createsuperuser
 python3 manage.py runserver
@@ -158,9 +175,11 @@ python3 manage.py runserver
 
 <p>아이디/메일주소/비번을 입력한다.</p>
 
-<h2 id="관리자-계정으로-새로운-포스트-작성">관리자 계정으로 새로운 포스트 작성</h2>
+<ul>
+  <li>관리자 계정으로 새로운 포스트 작성</li>
+</ul>
 
-<h3 id="http1270018000admin-접속">‘http://127.0.0.1:8000/admin’ 접속</h3>
+<p><code class="highlighter-rouge">http://127.0.0.1:8000/admin</code> 접속</p>
 
 <p>접속해서 Post 메뉴에서 새로운 Post를 추가해본다.</p>
 
@@ -168,9 +187,11 @@ python3 manage.py runserver
 
 <p>위 그림과 같이 현재 시각이 잘 맞는지 확인!</p>
 
-<h2 id="메인-페이지-접속-시-반응하도록-수정">메인 페이지 접속 시 반응하도록 수정</h2>
+<ul>
+  <li>메인 페이지 접속 시 반응하도록 수정</li>
+</ul>
 
-<h3 id="mainurlspy-수정">‘main/urls.py’ 수정</h3>
+<p><code class="highlighter-rouge">main/urls.py</code> 수정</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.contrib</span> <span class="kn">import</span> <span class="n">admin</span>
 <span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
@@ -181,7 +202,9 @@ python3 manage.py runserver
 <span class="p">]</span>
 </code></pre></div></div>
 
-<h3 id="timelineurlspy-생성">timeline/urls.py 생성</h3>
+<ul>
+  <li>timeline/urls.py 생성</li>
+</ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">path</span>
 <span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">views</span>
@@ -191,7 +214,9 @@ python3 manage.py runserver
 <span class="p">]</span>
 </code></pre></div></div>
 
-<h3 id="timelineviewspy-수정">timeline/views.py 수정</h3>
+<ul>
+  <li>timeline/views.py 수정</li>
+</ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">render</span>
 <span class="kn">from</span> <span class="nn">django.utils</span> <span class="kn">import</span> <span class="n">timezone</span>
@@ -202,11 +227,13 @@ python3 manage.py runserver
     <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s">'timeline/post_list.html'</span><span class="p">,{</span> <span class="s">'posts'</span><span class="p">:</span><span class="n">posts</span> <span class="p">})</span>
 </code></pre></div></div>
 
-<h3 id="timelinetemplatestimelinepost_listhtml-생성">timeline/templates/timeline/post_list.html 생성</h3>
+<p><code class="highlighter-rouge">timeline/templates/timeline/post_list.html</code> 생성</p>
 
 <p><a href="https://github.com/woongchoi84/django/blob/master/blog/templates/blog/post_list.html">만들어둔 링크</a>와 같이 수정</p>
 
-<h2 id="블루프린트---타임라인-가져오기"><a href="https://github.com/codrops/Blueprint-VerticalTimeline">블루프린트 - 타임라인</a> 가져오기</h2>
+<ul>
+  <li><a href="https://github.com/codrops/Blueprint-VerticalTimeline">블루프린트 - 타임라인</a> 가져오기</li>
+</ul>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">cd timeline
 mkdir static
@@ -214,11 +241,13 @@ cd static
 git clone https://github.com/codrops/Blueprint-VerticalTimeline.git .
 </span></code></pre></div></div>
 
-<h2 id="페이지-확인">페이지 확인</h2>
+<ul>
+  <li>페이지 확인</li>
+</ul>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">python3 manage.py runserver
 </span></code></pre></div></div>
-<p>http://127.0.0.1:8000/</p>
+<p><a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a></p>
 
 <p>접속해보면 아래와 같이 나오는 것을 확인 할 수 있다.</p>
 
@@ -280,8 +309,8 @@ git clone https://github.com/codrops/Blueprint-VerticalTimeline.git .
     
       <li>
         <h3>
-          <a href="/2020/01/15/post-blog-cssmodifications.html">
-            [Blog] CSS Modifications
+          <a href="/2020/01/14/post-productive-gitclone.html">
+            [Productive] GitHub Clone 할 때 폴더 째 혹은 내용물만 가져오기
           </a>
         </h3>
       </li>
@@ -294,7 +323,7 @@ git clone https://github.com/codrops/Blueprint-VerticalTimeline.git .
 
   
   <h2>all tags</h2>
-  <div class="tag-cloud"><a href="/tag/blog/" class="set-5">Blog</a> <a href="/tag/clip/" class="set-1">Clip</a> <a href="/tag/crawling/" class="set-1">Crawling</a> <a href="/tag/debug/" class="set-1">Debug</a> <a href="/tag/engineer/" class="set-1">Engineer</a> <a href="/tag/git/" class="set-1">Git</a> <a href="/tag/google/" class="set-1">Google</a> <a href="/tag/jekyll/" class="set-1">Jekyll</a> <a href="/tag/linux/" class="set-5">Linux</a> <a href="/tag/music/" class="set-3">Music</a> <a href="/tag/ppt/" class="set-1">PPT</a> <a href="/tag/place/" class="set-1">Place</a> <a href="/tag/productive/" class="set-2">Productive</a> <a href="/tag/python/" class="set-1">Python</a> <a href="/tag/setup/" class="set-4">Setup</a> <a href="/tag/wsl/" class="set-1">WSL</a> <a href="/tag/windows/" class="set-1">Windows</a></div>
+  <div class="tag-cloud"><a href="/tag/blog/" class="set-4">Blog</a> <a href="/tag/clip/" class="set-1">Clip</a> <a href="/tag/crawling/" class="set-1">Crawling</a> <a href="/tag/debug/" class="set-1">Debug</a> <a href="/tag/engineer/" class="set-1">Engineer</a> <a href="/tag/git/" class="set-1">Git</a> <a href="/tag/google/" class="set-1">Google</a> <a href="/tag/jekyll/" class="set-1">Jekyll</a> <a href="/tag/linux/" class="set-5">Linux</a> <a href="/tag/music/" class="set-3">Music</a> <a href="/tag/ppt/" class="set-1">PPT</a> <a href="/tag/place/" class="set-1">Place</a> <a href="/tag/productive/" class="set-2">Productive</a> <a href="/tag/python/" class="set-1">Python</a> <a href="/tag/setup/" class="set-4">Setup</a> <a href="/tag/wsl/" class="set-1">WSL</a> <a href="/tag/windows/" class="set-1">Windows</a></div>
   
 
 

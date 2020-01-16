@@ -8,18 +8,18 @@
 <meta property="og:title" content="[Linux] Bash Shell 기반 리눅스에서 폴더 이동할 때마다 내용 리스트업하기" />
 <meta name="author" content="Woong" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="I’m a Creep; I’m a Weirdo." />
-<meta property="og:description" content="I’m a Creep; I’m a Weirdo." />
+<meta name="description" content="이건 진짜 유용한 정보다!" />
+<meta property="og:description" content="이건 진짜 유용한 정보다!" />
 <link rel="canonical" href="https://woongchoi84.github.io/2020/01/10/post-linux-%EB%B0%B0%EC%89%AC%EC%89%98%EC%97%90%EC%84%9C%ED%8F%B4%EB%8D%94%EC%9D%B4%EB%8F%99%EB%95%8C%EB%A7%88%EB%8B%A4%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%97%85.html" />
 <meta property="og:url" content="https://woongchoi84.github.io/2020/01/10/post-linux-%EB%B0%B0%EC%89%AC%EC%89%98%EC%97%90%EC%84%9C%ED%8F%B4%EB%8D%94%EC%9D%B4%EB%8F%99%EB%95%8C%EB%A7%88%EB%8B%A4%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%97%85.html" />
 <meta property="og:site_name" content="Woong’s Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-01-10T00:00:00+09:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://woongchoi84.github.io/2020/01/10/post-linux-%EB%B0%B0%EC%89%AC%EC%89%98%EC%97%90%EC%84%9C%ED%8F%B4%EB%8D%94%EC%9D%B4%EB%8F%99%EB%95%8C%EB%A7%88%EB%8B%A4%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%97%85.html","headline":"[Linux] Bash Shell 기반 리눅스에서 폴더 이동할 때마다 내용 리스트업하기","dateModified":"2020-01-10T00:00:00+09:00","datePublished":"2020-01-10T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://woongchoi84.github.io/2020/01/10/post-linux-%EB%B0%B0%EC%89%AC%EC%89%98%EC%97%90%EC%84%9C%ED%8F%B4%EB%8D%94%EC%9D%B4%EB%8F%99%EB%95%8C%EB%A7%88%EB%8B%A4%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%97%85.html"},"author":{"@type":"Person","name":"Woong"},"description":"I’m a Creep; I’m a Weirdo.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://woongchoi84.github.io/2020/01/10/post-linux-%EB%B0%B0%EC%89%AC%EC%89%98%EC%97%90%EC%84%9C%ED%8F%B4%EB%8D%94%EC%9D%B4%EB%8F%99%EB%95%8C%EB%A7%88%EB%8B%A4%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%97%85.html","headline":"[Linux] Bash Shell 기반 리눅스에서 폴더 이동할 때마다 내용 리스트업하기","dateModified":"2020-01-10T00:00:00+09:00","datePublished":"2020-01-10T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://woongchoi84.github.io/2020/01/10/post-linux-%EB%B0%B0%EC%89%AC%EC%89%98%EC%97%90%EC%84%9C%ED%8F%B4%EB%8D%94%EC%9D%B4%EB%8F%99%EB%95%8C%EB%A7%88%EB%8B%A4%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%97%85.html"},"author":{"@type":"Person","name":"Woong"},"description":"이건 진짜 유용한 정보다!","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://woongchoi84.github.io/feed.xml" title="Woong's Blog" /><link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Serif+KR|Noto+Sans+KR|Nanum+Myeongjo|Nanum+Pen+Script|Sunflower|Cute+Font|Nanum+Brush+Script|Do+Hyeon|Black+Han+Sans|Gaegu|Gamja+Flower|Poor+Story|Hi+Melody|Black+And+White+Picture|Jua|Song+Myung|Stylish|Yeon+Sung" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://woongchoi84.github.io/feed.xml" title="Woong's Blog" /><link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono|Nanum+Myeongjo:400|Nanum+Myeongjo:400,700,800" rel="stylesheet" type="text/css">
 </head>
 <body><div class="site-header">
   <div class="wrapper">
@@ -52,11 +52,16 @@ I'm a Creep; I'm a Weirdo.
   
   <div class="post-date">Published on 10 Jan 2020</div>
   
-  <p><img src="https://cdn.pixabay.com/photo/2015/01/08/18/24/programming-593312_1280.jpg" alt="" /></p>
+  <div class="post-description">이건 진짜 유용한 정보다!</div>
+  
+  <h2>.</h2>
 
-<h1 id="bashrc-파일-수정">.bashrc 파일 수정</h1>
+<h3 id="bashrc-파일-수정">.bashrc 파일 수정</h3>
+<hr />
 
-<h2 id="아래-문구-추가">아래 문구 추가</h2>
+<ul>
+  <li>아래 문구 추가</li>
+</ul>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">function	cd	{ if (( $</span><span class="c">#==0 )); then builtin cd ~ &amp;&amp; ls; else builtin cd "$@" &amp;&amp; ls; fi }</span>
 <span class="go">cd		.
@@ -64,23 +69,26 @@ I'm a Creep; I'm a Weirdo.
 
 <p>함수를 해석해보자면,</p>
 
-<blockquote>
-  <p>뒤에 <code class="highlighter-rouge">cd</code>와 함께 쓰이는 인자(argument)의 갯수가 0이면,</p>
-</blockquote>
-
-<p>(즉 <code class="highlighter-rouge">cd</code>만 쓰면)</p>
+<ul>
+  <li>뒤에 <code class="highlighter-rouge">cd</code>와 함께 쓰이는 인자(argument)의 갯수가 0이면 (즉 <code class="highlighter-rouge">cd</code>만 쓰면),</li>
+</ul>
 
 <p>유저의 <code class="highlighter-rouge">home</code>폴더로 이동하고,</p>
 
-<blockquote>
-  <p>인자의 갯수가 0이 아니면</p>
-</blockquote>
+<ul>
+  <li>인자의 갯수가 0이 아니면,</li>
+</ul>
 
 <p>뒤에 오는 첫번째 인자로 이동한다.</p>
 
-<p>그다음 <code class="highlighter-rouge">ls</code> 커맨드로 현재 폴더의 내용을 화면에 리스트업 해준다.</p>
+<ul>
+  <li>그다음 <code class="highlighter-rouge">ls</code> 커맨드로 현재 폴더의 내용을 화면에 리스트업 해준다.</li>
+</ul>
 
-<h2 id="bash의-파라미터-처리">bash의 파라미터 처리</h2>
+<h2 id="-1">.</h2>
+
+<h3 id="bash의-파라미터-처리">bash의 파라미터 처리</h3>
+<hr />
 
 <ul>
   <li>$#: 			the number of arguments, not counting $0</li>
@@ -90,7 +98,10 @@ I'm a Creep; I'm a Weirdo.
   <li>$1 … $9: 	the argument list elements from 1 to 9</li>
 </ul>
 
-<h2 id="xxxrc-파일이란">xxxrc 파일이란?</h2>
+<h2 id="-2">.</h2>
+
+<h3 id="xxxrc-파일이란">xxxrc 파일이란?</h3>
+<hr />
 
 <ul>
   <li>“runtime configuration”</li>
@@ -150,8 +161,8 @@ I'm a Creep; I'm a Weirdo.
     
       <li>
         <h3>
-          <a href="/2020/01/15/post-blog-cssmodifications.html">
-            [Blog] CSS Modifications
+          <a href="/2020/01/14/post-productive-gitclone.html">
+            [Productive] GitHub Clone 할 때 폴더 째 혹은 내용물만 가져오기
           </a>
         </h3>
       </li>
@@ -164,7 +175,7 @@ I'm a Creep; I'm a Weirdo.
 
   
   <h2>all tags</h2>
-  <div class="tag-cloud"><a href="/tag/blog/" class="set-5">Blog</a> <a href="/tag/clip/" class="set-1">Clip</a> <a href="/tag/crawling/" class="set-1">Crawling</a> <a href="/tag/debug/" class="set-1">Debug</a> <a href="/tag/engineer/" class="set-1">Engineer</a> <a href="/tag/git/" class="set-1">Git</a> <a href="/tag/google/" class="set-1">Google</a> <a href="/tag/jekyll/" class="set-1">Jekyll</a> <a href="/tag/linux/" class="set-5">Linux</a> <a href="/tag/music/" class="set-3">Music</a> <a href="/tag/ppt/" class="set-1">PPT</a> <a href="/tag/place/" class="set-1">Place</a> <a href="/tag/productive/" class="set-2">Productive</a> <a href="/tag/python/" class="set-1">Python</a> <a href="/tag/setup/" class="set-4">Setup</a> <a href="/tag/wsl/" class="set-1">WSL</a> <a href="/tag/windows/" class="set-1">Windows</a></div>
+  <div class="tag-cloud"><a href="/tag/blog/" class="set-4">Blog</a> <a href="/tag/clip/" class="set-1">Clip</a> <a href="/tag/crawling/" class="set-1">Crawling</a> <a href="/tag/debug/" class="set-1">Debug</a> <a href="/tag/engineer/" class="set-1">Engineer</a> <a href="/tag/git/" class="set-1">Git</a> <a href="/tag/google/" class="set-1">Google</a> <a href="/tag/jekyll/" class="set-1">Jekyll</a> <a href="/tag/linux/" class="set-5">Linux</a> <a href="/tag/music/" class="set-3">Music</a> <a href="/tag/ppt/" class="set-1">PPT</a> <a href="/tag/place/" class="set-1">Place</a> <a href="/tag/productive/" class="set-2">Productive</a> <a href="/tag/python/" class="set-1">Python</a> <a href="/tag/setup/" class="set-4">Setup</a> <a href="/tag/wsl/" class="set-1">WSL</a> <a href="/tag/windows/" class="set-1">Windows</a></div>
   
 
 

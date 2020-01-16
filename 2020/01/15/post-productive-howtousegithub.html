@@ -19,7 +19,7 @@
 {"@type":"BlogPosting","url":"https://woongchoi84.github.io/2020/01/15/post-productive-howtousegithub.html","headline":"[Git] GitHub 사용법 (for Linux)","dateModified":"2020-01-15T00:00:00+09:00","datePublished":"2020-01-15T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://woongchoi84.github.io/2020/01/15/post-productive-howtousegithub.html"},"author":{"@type":"Person","name":"Woong"},"description":"깃허브는 분산 버전 관리 툴인 깃을 사용하는 프로젝트를 지원하는 웹호스팅 서비스이다. - 위키백과 -","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://woongchoi84.github.io/feed.xml" title="Woong's Blog" /><link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Serif+KR|Noto+Sans+KR|Nanum+Myeongjo|Nanum+Pen+Script|Sunflower|Cute+Font|Nanum+Brush+Script|Do+Hyeon|Black+Han+Sans|Gaegu|Gamja+Flower|Poor+Story|Hi+Melody|Black+And+White+Picture|Jua|Song+Myung|Stylish|Yeon+Sung" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://woongchoi84.github.io/feed.xml" title="Woong's Blog" /><link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono|Nanum+Myeongjo:400|Nanum+Myeongjo:400,700,800" rel="stylesheet" type="text/css">
 </head>
 <body><div class="site-header">
   <div class="wrapper">
@@ -52,65 +52,102 @@ I'm a Creep; I'm a Weirdo.
   
   <div class="post-description">깃허브는 분산 버전 관리 툴인 깃을 사용하는 프로젝트를 지원하는 웹호스팅 서비스이다. - 위키백과 -</div>
   
-  <h1 id="overall-contents">Overall Contents</h1>
+  <h2>.</h2>
+
+<h3 id="overall-contents">Overall Contents</h3>
+
 <hr />
+
 <ol>
-  <li>https://github.com/ 에서 계정 만들기</li>
-  <li>사이트에서 저장소 (리포지토리, repository) 만들기</li>
-  <li>클라이언트 (리눅스) 에서 내 저장소와 연결 정보 만들기</li>
-  <li>저장소에 파일 저장하기 (upload)</li>
-  <li>저장소에서 파일 내려받기 (download)</li>
-  <li>추가 사항!</li>
+  <li>
+    <p>https://github.com/ 에서 계정 만들기</p>
+  </li>
+  <li>
+    <p>사이트에서 저장소 (리포지토리, repository) 만들기</p>
+  </li>
+  <li>
+    <p>클라이언트 (리눅스) 에서 내 저장소와 연결 정보 만들기</p>
+  </li>
+  <li>
+    <p>저장소에 파일 저장하기 (upload)</p>
+  </li>
+  <li>
+    <p>저장소에서 파일 내려받기 (download)</p>
+  </li>
+  <li>
+    <p>추가 사항!</p>
+  </li>
 </ol>
 
-<h2 id="1-httpsgithubcom-에서-계정-만들기">1. https://github.com/ 에서 계정 만들기</h2>
+<h2 id="-1">.</h2>
+
+<h3 id="1-httpsgithubcom-에서-계정-만들기">1. https://github.com/ 에서 계정 만들기</h3>
+
 <hr />
-
-<h3 id="--링크">- 링크</h3>
-
-<p><a href="https://github.com/">https://github.com/</a></p>
-
-<h3 id="--회원가입">- 회원가입</h3>
 
 <ul>
-  <li>Sign In: 로그인</li>
-  <li>Sign Out: 회원가입</li>
+  <li>
+    <p><a href="https://github.com/">https://github.com/</a></p>
+  </li>
+  <li>
+    <p>회원가입: Sign In - 로그인, Sign Up - 회원가입</p>
+  </li>
 </ul>
 
-<h2 id="2-사이트에서-저장소-리포지토리-repository-만들기">2. 사이트에서 저장소 (리포지토리, repository) 만들기</h2>
+<h2 id="-2">.</h2>
+
+<h3 id="2-사이트에서-저장소-리포지토리-repository-만들기">2. 사이트에서 저장소 (리포지토리, repository) 만들기</h3>
+
 <hr />
 
-<h3 id="--사이트-화면에서-repositories-옆에-new-버튼-클릭">- 사이트 화면에서 Repositories 옆에 New 버튼 클릭</h3>
-
-<h3 id="--저장소-repository-이름-선정">- 저장소 (repository) 이름 선정</h3>
+<ul>
+  <li>
+    <p>사이트 화면에서 Repositories 옆에 New 버튼 클릭</p>
+  </li>
+  <li>
+    <p>저장소 (repository) 이름 선정</p>
+  </li>
+</ul>
 
 <p><img src="https://i.ibb.co/yFDJwvk/1.png" alt="" /></p>
 
-<p><code class="highlighter-rouge">woongchoi84/</code> 오른쪽 위치에 원하는 <code class="highlighter-rouge">저장소 이름</code>을 적어넣고, 맨 아래 <code class="highlighter-rouge">Create repository</code> 버튼 클릭</p>
-
-<p>(아래에 몇가지 옵션이 있는데 건드리지 말자.)</p>
+<p><code class="highlighter-rouge">/</code> 오른쪽 위치에 원하는 <code class="highlighter-rouge">저장소 이름</code>을 적어넣고, 맨 아래 <code class="highlighter-rouge">Create repository</code> 버튼 클릭</p>
 
 <ul>
-  <li>Public: 공개 (아무나 볼수 있다, 무료)</li>
-  <li>Private: 비공개 (1개 공짜, 그 이상은 유료)</li>
+  <li>
+    <p>아래에 몇가지 옵션이 있는데 건드리지 말자.)</p>
+  </li>
+  <li>
+    <p>Public: 공개 (아무나 볼수 있다, 무료)</p>
+  </li>
+  <li>
+    <p>Private: 비공개 (1개 공짜, 그 이상은 유료)</p>
+  </li>
 </ul>
 
-<h2 id="3-클라이언트-리눅스-에서-내-저장소와-연결-정보-만들기">3. 클라이언트 (리눅스) 에서 내 저장소와 연결 정보 만들기</h2>
+<h2 id="-3">.</h2>
+
+<h3 id="3-클라이언트-리눅스-에서-내-저장소와-연결-정보-만들기">3. 클라이언트 (리눅스) 에서 내 저장소와 연결 정보 만들기</h3>
+
 <hr />
 
-<h3 id="git-설치-install">Git 설치 (Install)</h3>
+<ul>
+  <li>Git 설치 (Install)</li>
+</ul>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="o">&gt;</span> git
-</code></pre></div></div>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git
+</span></code></pre></div></div>
 
 <p>터미널에 <code class="highlighter-rouge">git</code> 입력 시 설치하라고 나오면</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="o">&gt;</span> <span class="nb">sudo </span>apt-get <span class="nb">install </span>git
-</code></pre></div></div>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo apt-get install git
+</span></code></pre></div></div>
 
 <p>커맨드를 통해 설치 할 수 있다.</p>
 
-<h3 id="git-초기-설정-환경-설정">Git 초기 설정 (환경 설정)</h3>
+<ul>
+  <li>Git 초기 설정 (환경 설정)</li>
+</ul>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git config --global user.name woongchoi84
 git config --global user.email woongchoi84@gmail.com
@@ -118,15 +155,21 @@ git config --global --list
 </span></code></pre></div></div>
 <p>리눅스 입장에서는 내 깃허브 정보를 알리가 없다. 처음 한번 입력해주자!.</p>
 
-<h3 id="github의-저장소와-동기화">GitHub의 저장소와 동기화</h3>
+<ul>
+  <li>GitHub의 저장소와 동기화</li>
+</ul>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git init
 git remote add origin https://github.com/woongchoi84/test
 </span></code></pre></div></div>
 
 <ul>
-  <li>git init : 실행한 폴더에 <code class="highlighter-rouge">.git</code> 폴더를 만든다. 이 안에 git에 필요한 정보들이 업데이트 된다.</li>
-  <li>git remote  ~~ : https://github.com/<code class="highlighter-rouge">깃허브 아이디</code>/<code class="highlighter-rouge">저장소 이름</code></li>
+  <li>
+    <p>git init : 실행한 폴더에 <code class="highlighter-rouge">.git</code> 폴더를 만든다. 이 안에 git에 필요한 정보들이 업데이트 된다.</p>
+  </li>
+  <li>
+    <p>git remote  ~~ : https://github.com/<code class="highlighter-rouge">깃허브 아이디</code>/<code class="highlighter-rouge">저장소 이름</code></p>
+  </li>
 </ul>
 
 <blockquote>
@@ -136,7 +179,10 @@ git remote add origin https://github.com/woongchoi84/test
 <p><code class="highlighter-rouge">git init</code> 혹은 <code class="highlighter-rouge">git clone repo_url</code> 등의 명령어를 사용하는 경우 <code class="highlighter-rouge">.git</code> 폴더가 생기는데, 이게 하위 디렉토리 같은 곳에 있으면 문제가 된다.
 뒤에서 설명할 <code class="highlighter-rouge">git push</code> 혹은 <code class="highlighter-rouge">git pull</code> 이 안되는 경우 리눅스 <code class="highlighter-rouge">tree</code> 명령어를 통해 불필요한 <code class="highlighter-rouge">.git</code> 폴더의 유무를 체크해보자!</p>
 
-<h2 id="4-저장소에-파일-저장하기-upload">4. 저장소에 파일 저장하기 (upload)</h2>
+<h2 id="-4">.</h2>
+
+<h3 id="4-저장소에-파일-저장하기-upload">4. 저장소에 파일 저장하기 (upload)</h3>
+
 <hr />
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git add .
@@ -144,39 +190,44 @@ git commit -m "first commit"
 git push -u origin master
 </span></code></pre></div></div>
 
-<ul>
-  <li>git add : 저장소에 올릴 파일을 정하는 것 (<code class="highlighter-rouge">.</code>의 의미는 전체 파일)</li>
-  <li>git commit : 저장소에 올리는데 설명을 붙여주는 것 (귀찮지만 꼭 해야한다)</li>
-  <li>git push : 이 명령어를 통해 실제로 업로드</li>
-</ul>
+<p><code class="highlighter-rouge">git add</code> : 저장소에 올릴 파일을 정하는 것 (<code class="highlighter-rouge">.</code>의 의미는 전체 파일)</p>
 
-<h2 id="5-저장소에서-파일-내려받기-download">5. 저장소에서 파일 내려받기 (download)</h2>
+<p><code class="highlighter-rouge">git commit</code> : 저장소에 올리는데 설명을 붙여주는 것 (귀찮지만 꼭 해야한다)</p>
+
+<p><code class="highlighter-rouge">git push</code> : 이 명령어를 통해 실제로 업로드</p>
+
+<h2 id="-5">.</h2>
+
+<h3 id="5-저장소에서-파일-내려받기-download">5. 저장소에서 파일 내려받기 (download)</h3>
+
 <hr />
 
-<h3 id="첫번째-방법-git-clone">첫번째 방법: git clone</h3>
+<ul>
+  <li>첫번째 방법: git clone</li>
+</ul>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git clone repo_url
 </span></code></pre></div></div>
 
 <p>이 명령어는 위에서 했던 과정없이 바로 수행 가능하며 단지 깃허브 저장소 (repo_url)에서 파일을 복사해온다.</p>
 
-<blockquote>
-  <p>유용한 팁 (., 점 유무에 주의)</p>
-</blockquote>
-
 <ul>
-  <li><code class="highlighter-rouge">git clone repo_url .</code> : 저장소에 있는 파일을 현재 경로로 가져온다.</li>
+  <li>
+    <p>유용한 팁 (., 점 유무에 주의)</p>
+
+    <ul>
+      <li>
+        <p><code class="highlighter-rouge">git clone repo_url .</code> : 저장소에 있는 파일을 현재 경로로 가져온다. 리눅스 명령어와 비교해보면 <code class="highlighter-rouge">cp -rf ../source_dir/* .</code>와 같은 동작이 수행된다.</p>
+      </li>
+      <li>
+        <p><code class="highlighter-rouge">git clone repo_url</code>   : 저장소 폴더 통째로 현재 경로로 가져온다. 즉, 저장소 이름의 폴더명이 현재 경로에 생성된다. 리눅스 명령어와 비교해보면 <code class="highlighter-rouge">cp -rf ../source_dir .</code>와 같은 동작이 수행된다.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>두번째 방법: git pull</p>
+  </li>
 </ul>
-
-<p>리눅스 명령어와 비교해보면 <code class="highlighter-rouge">cp -rf ../source_dir/* .</code>와 같은 동작이 수행된다.</p>
-
-<ul>
-  <li><code class="highlighter-rouge">git clone repo_url</code>   : 저장소 폴더 통째로 현재 경로로 가져온다. 즉, 저장소 이름의 폴더명이 현재 경로에 생성된다.</li>
-</ul>
-
-<p>리눅스 명령어와 비교해보면 <code class="highlighter-rouge">cp -rf ../source_dir .</code>와 같은 동작이 수행된다.</p>
-
-<h3 id="두번째-방법-git-pull">두번째 방법: git pull</h3>
 
 <p>이 명령어를 쓰게되는 상황은 다음과 같다.</p>
 
@@ -200,16 +251,22 @@ git push -u origin master
 
 <p>작업 중인 경로에 가서 위 명령어를 치면 <code class="highlighter-rouge">.git</code> 폴더의 내용을 기반으로 저장소와 내 로컬 (리눅스) 간의 연결 정보를 파악하여 저장소에 있는 최신 코드로 내 로컬 파일들을 업데이트한다.</p>
 
-<h2 id="6-추가-사항">6. 추가 사항!</h2>
+<h2 id="-6">.</h2>
 
-<h3 id="추가-사항을-넣은-이유는-다음과-같은-상황-때문이다">추가 사항을 넣은 이유는 다음과 같은 상황 때문이다.</h3>
+<h3 id="6-추가-사항">6. 추가 사항!</h3>
+
+<hr />
+
+<ul>
+  <li>추가 사항을 넣은 이유는 다음과 같은 상황 때문이다.</li>
+</ul>
 
 <p>두괄식으로 요약하자면,</p>
 
 <ol>
   <li>작업: 로컬에서 코드 개발</li>
-  <li>업로드: 로컬 (리눅스) -&gt; 저장소</li>
-  <li>다운로드: 저장소 -&gt; 로컬 (리눅스)</li>
+  <li>업로드: 로컬 (리눅스) –  저장소</li>
+  <li>다운로드: 저장소 –  로컬 (리눅스)</li>
 </ol>
 
 <p>위의 1-2-3-1-2-3-1-2-3-… 순서가 어그러지면 문제가 발생한다.</p>
@@ -278,7 +335,9 @@ git push -u origin master
 
 <p>다음에는 윈도우 설치 프로그램 기준 깃 사용법에 대해 포스팅 할 예정이다.</p>
 
-<h3 id="마지막-팁">마지막 팁</h3>
+<blockquote>
+  <p>마지막 팁</p>
+</blockquote>
 
 <p>필자의 경우 편의를 위해 아래와 같이 ‘alias’ (단축키) 설정해두고 사용한다.</p>
 
@@ -327,16 +386,16 @@ git push -u origin master
     
       <li>
         <h3>
-          <a href="/2020/01/15/post-blog-cssmodifications.html">
-            [Blog] CSS Modifications
+          <a href="/2020/01/14/post-productive-gitclone.html">
+            [Productive] GitHub Clone 할 때 폴더 째 혹은 내용물만 가져오기
           </a>
         </h3>
       </li>
     
       <li>
         <h3>
-          <a href="/2020/01/14/post-productive-gitclone.html">
-            [Productive] GitHub Clone 할 때 폴더 째 혹은 내용물만 가져오기
+          <a href="/2020/01/14/post-linux-wsl-00.html">
+            [Linux] WSL (Windows-Subsystem-for-Linux) 기반 개발 환경 구축 : 01 (Not Completed)
           </a>
         </h3>
       </li>
@@ -349,7 +408,7 @@ git push -u origin master
 
   
   <h2>all tags</h2>
-  <div class="tag-cloud"><a href="/tag/blog/" class="set-5">Blog</a> <a href="/tag/clip/" class="set-1">Clip</a> <a href="/tag/crawling/" class="set-1">Crawling</a> <a href="/tag/debug/" class="set-1">Debug</a> <a href="/tag/engineer/" class="set-1">Engineer</a> <a href="/tag/git/" class="set-1">Git</a> <a href="/tag/google/" class="set-1">Google</a> <a href="/tag/jekyll/" class="set-1">Jekyll</a> <a href="/tag/linux/" class="set-5">Linux</a> <a href="/tag/music/" class="set-3">Music</a> <a href="/tag/ppt/" class="set-1">PPT</a> <a href="/tag/place/" class="set-1">Place</a> <a href="/tag/productive/" class="set-2">Productive</a> <a href="/tag/python/" class="set-1">Python</a> <a href="/tag/setup/" class="set-4">Setup</a> <a href="/tag/wsl/" class="set-1">WSL</a> <a href="/tag/windows/" class="set-1">Windows</a></div>
+  <div class="tag-cloud"><a href="/tag/blog/" class="set-4">Blog</a> <a href="/tag/clip/" class="set-1">Clip</a> <a href="/tag/crawling/" class="set-1">Crawling</a> <a href="/tag/debug/" class="set-1">Debug</a> <a href="/tag/engineer/" class="set-1">Engineer</a> <a href="/tag/git/" class="set-1">Git</a> <a href="/tag/google/" class="set-1">Google</a> <a href="/tag/jekyll/" class="set-1">Jekyll</a> <a href="/tag/linux/" class="set-5">Linux</a> <a href="/tag/music/" class="set-3">Music</a> <a href="/tag/ppt/" class="set-1">PPT</a> <a href="/tag/place/" class="set-1">Place</a> <a href="/tag/productive/" class="set-2">Productive</a> <a href="/tag/python/" class="set-1">Python</a> <a href="/tag/setup/" class="set-4">Setup</a> <a href="/tag/wsl/" class="set-1">WSL</a> <a href="/tag/windows/" class="set-1">Windows</a></div>
   
 
 

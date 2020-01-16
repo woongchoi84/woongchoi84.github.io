@@ -8,18 +8,18 @@
 <meta property="og:title" content="[Linux] 셔뱅(shebang) 사용법" />
 <meta name="author" content="Woong" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="I’m a Creep; I’m a Weirdo." />
-<meta property="og:description" content="I’m a Creep; I’m a Weirdo." />
+<meta name="description" content="리눅스 사용시 꼭 기억해야하는 사항!" />
+<meta property="og:description" content="리눅스 사용시 꼭 기억해야하는 사항!" />
 <link rel="canonical" href="https://woongchoi84.github.io/2020/01/05/post-linux-%EC%85%94%EB%B1%85.html" />
 <meta property="og:url" content="https://woongchoi84.github.io/2020/01/05/post-linux-%EC%85%94%EB%B1%85.html" />
 <meta property="og:site_name" content="Woong’s Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-01-05T00:00:00+09:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://woongchoi84.github.io/2020/01/05/post-linux-%EC%85%94%EB%B1%85.html","headline":"[Linux] 셔뱅(shebang) 사용법","dateModified":"2020-01-05T00:00:00+09:00","datePublished":"2020-01-05T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://woongchoi84.github.io/2020/01/05/post-linux-%EC%85%94%EB%B1%85.html"},"author":{"@type":"Person","name":"Woong"},"description":"I’m a Creep; I’m a Weirdo.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://woongchoi84.github.io/2020/01/05/post-linux-%EC%85%94%EB%B1%85.html","headline":"[Linux] 셔뱅(shebang) 사용법","dateModified":"2020-01-05T00:00:00+09:00","datePublished":"2020-01-05T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://woongchoi84.github.io/2020/01/05/post-linux-%EC%85%94%EB%B1%85.html"},"author":{"@type":"Person","name":"Woong"},"description":"리눅스 사용시 꼭 기억해야하는 사항!","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://woongchoi84.github.io/feed.xml" title="Woong's Blog" /><link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Serif+KR|Noto+Sans+KR|Nanum+Myeongjo|Nanum+Pen+Script|Sunflower|Cute+Font|Nanum+Brush+Script|Do+Hyeon|Black+Han+Sans|Gaegu|Gamja+Flower|Poor+Story|Hi+Melody|Black+And+White+Picture|Jua|Song+Myung|Stylish|Yeon+Sung" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://woongchoi84.github.io/feed.xml" title="Woong's Blog" /><link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono|Nanum+Myeongjo:400|Nanum+Myeongjo:400,700,800" rel="stylesheet" type="text/css">
 </head>
 <body><div class="site-header">
   <div class="wrapper">
@@ -52,13 +52,16 @@ I'm a Creep; I'm a Weirdo.
   
   <div class="post-date">Published on 05 Jan 2020</div>
   
+  <div class="post-description">리눅스 사용시 꼭 기억해야하는 사항!</div>
+  
   <p><img src="https://cdn.pixabay.com/photo/2017/04/27/01/31/question-2264166_1280.png" alt="" /></p>
 
-<h1 id="셔뱅shebang의-의미">셔뱅(shebang)의 의미</h1>
+<h2>.</h2>
 
-<p>운영체제 입장에서는 스크립트 파일이</p>
+<h3 id="셔뱅shebang의-의미">셔뱅(shebang)의 의미</h3>
+<hr />
 
-<p>어떤 문법으로 짜여진건지 모른다.</p>
+<p>운영체제 입장에서는 스크립트 파일이 어떤 문법으로 짜여진건지 모른다.</p>
 
 <p>(예: 이게 파이썬 코드야, 쉘 코드야?)</p>
 
@@ -68,28 +71,35 @@ I'm a Creep; I'm a Weirdo.
 </code></pre></div></div>
 <p>와 같이 인터프리팅 정보를 주는것을 셔뱅이라 한다.</p>
 
-<h2 id="위키피디아-설명"><a href="https://ko.wikipedia.org/wiki/%EC%85%94%EB%B1%85">위키피디아</a> 설명</h2>
+<ul>
+  <li><a href="https://ko.wikipedia.org/wiki/%EC%85%94%EB%B1%85">위키피디아</a> 설명</li>
+</ul>
 
 <blockquote>
-  <p>셔뱅(shebang)은 해시 기호와 느낌표(#!)로 이루어진 문자 시퀀스로, 스크립트의 맨 처음에 온다. 샤-뱅(sha-bang)[1][2][3], 해시뱅(hashbang)[4][5], 파운드-뱅(pound-bang)[2][6], 해시-플링(hash-pling)[2][7], 크런치뱅(crunchbang)이라고도 한다. 유닉스 계열 운영 체제에서 셔뱅이 있는 스크립트는 프로그램으로서 실행되며, 프로그램 로더가 스크립트의 첫 줄의 나머지 부분을 인터프리터 지시자(interpreter directive)로 구문 분석한다. 즉, 지정된 인터프리터 프로그램이 대신 실행되어 스크립트의 실행을 시도할 때 처음 사용되었던 경로를 인수로서 넘겨주게 된다.[8] 이를테면 스크립트의 경로가 path/to/script이고 다음의 줄로 시작한다면: <code class="highlighter-rouge"><span class="c">#!/bin/sh</span></code> 프로그램 로더는 프로그램 /bin/sh를 대신 실행하되 path/to/script를 첫 번째 인수로 넘겨준다. 셔뱅 줄은 일반적으로 인터프리터에 의해 무시되는데 그 까닭은 “#” 문자가 수많은 스크립트 언어에서 주석 표시자이기 때문이다. 스킴처럼 해시 마크를 주석 시작으로 사용하지 않는 일부 언어 인터프리터들은 목적에 맞게 셔뱅 줄을 무시하기도 한다. 다른 해결 방안으로는 전처리기에 의존하여 스크립트의 나머지 부분이 컴파일러나 인터프리터에 넘겨지기 전에 셔뱅 줄을 제거하거나 평가하게끔 하는 방법이다. 이를테면 여러 운영 체제에서 프리 파스칼로 작성된 프로그램을 실행할 수 있도록 하는 InstantFPC의 경우가 그러하다.[9]</p>
+  <p>셔뱅(shebang)은 해시 기호와 느낌표(#!)로 이루어진 문자 시퀀스로, 스크립트의 맨 처음에 온다. … 이하 중략</p>
 </blockquote>
 
-<h1 id="스크립트-파일-사용-예제">스크립트 파일 사용 예제</h1>
+<h2 id="-1">.</h2>
+
+<h3 id="스크립트-파일-사용-예제">스크립트 파일 사용 예제</h3>
+<hr />
 
 <p>특정 스크립트 파일을 파이썬 코드로 작성하였다고 가정하자.</p>
 
 <p>이때 아래와 같이 두 가지 스크립트 파일 실행이 가능하다.</p>
 
-<h2 id="1-쌩으로-스크립트-파일-실행">1. 쌩으로 스크립트 파일 실행</h2>
+<ul>
+  <li>쌩으로 스크립트 파일 실행</li>
+</ul>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="o">&gt;</span>python script_file
 </code></pre></div></div>
 
-<p>이렇게 실행해도 되지만,</p>
+<p>이렇게 실행해도 되지만, 자주 사용하는 스크립트의 경우 아래가 훨~씬 편하다.</p>
 
-<p>자주 사용하는 스크립트의 경우 아래가 훨~씬 편하다.</p>
-
-<h2 id="2-셔뱅--파일-실행">2. 셔뱅 + 파일 실행</h2>
+<ul>
+  <li>셔뱅 + 파일 실행</li>
+</ul>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="o">&gt;</span>which python
 <span class="go">/usr/bin/python
@@ -162,8 +172,8 @@ I'm a Creep; I'm a Weirdo.
     
       <li>
         <h3>
-          <a href="/2020/01/15/post-blog-cssmodifications.html">
-            [Blog] CSS Modifications
+          <a href="/2020/01/14/post-productive-gitclone.html">
+            [Productive] GitHub Clone 할 때 폴더 째 혹은 내용물만 가져오기
           </a>
         </h3>
       </li>
@@ -176,7 +186,7 @@ I'm a Creep; I'm a Weirdo.
 
   
   <h2>all tags</h2>
-  <div class="tag-cloud"><a href="/tag/blog/" class="set-5">Blog</a> <a href="/tag/clip/" class="set-1">Clip</a> <a href="/tag/crawling/" class="set-1">Crawling</a> <a href="/tag/debug/" class="set-1">Debug</a> <a href="/tag/engineer/" class="set-1">Engineer</a> <a href="/tag/git/" class="set-1">Git</a> <a href="/tag/google/" class="set-1">Google</a> <a href="/tag/jekyll/" class="set-1">Jekyll</a> <a href="/tag/linux/" class="set-5">Linux</a> <a href="/tag/music/" class="set-3">Music</a> <a href="/tag/ppt/" class="set-1">PPT</a> <a href="/tag/place/" class="set-1">Place</a> <a href="/tag/productive/" class="set-2">Productive</a> <a href="/tag/python/" class="set-1">Python</a> <a href="/tag/setup/" class="set-4">Setup</a> <a href="/tag/wsl/" class="set-1">WSL</a> <a href="/tag/windows/" class="set-1">Windows</a></div>
+  <div class="tag-cloud"><a href="/tag/blog/" class="set-4">Blog</a> <a href="/tag/clip/" class="set-1">Clip</a> <a href="/tag/crawling/" class="set-1">Crawling</a> <a href="/tag/debug/" class="set-1">Debug</a> <a href="/tag/engineer/" class="set-1">Engineer</a> <a href="/tag/git/" class="set-1">Git</a> <a href="/tag/google/" class="set-1">Google</a> <a href="/tag/jekyll/" class="set-1">Jekyll</a> <a href="/tag/linux/" class="set-5">Linux</a> <a href="/tag/music/" class="set-3">Music</a> <a href="/tag/ppt/" class="set-1">PPT</a> <a href="/tag/place/" class="set-1">Place</a> <a href="/tag/productive/" class="set-2">Productive</a> <a href="/tag/python/" class="set-1">Python</a> <a href="/tag/setup/" class="set-4">Setup</a> <a href="/tag/wsl/" class="set-1">WSL</a> <a href="/tag/windows/" class="set-1">Windows</a></div>
   
 
 

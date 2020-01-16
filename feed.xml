@@ -1,54 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://woongchoi84.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://woongchoi84.github.io/" rel="alternate" type="text/html" /><updated>2020-01-15T18:25:23+09:00</updated><id>https://woongchoi84.github.io/feed.xml</id><title type="html">Woong’s Blog</title><subtitle>I'm a Creep; I'm a Weirdo.
-</subtitle><author><name>Woong</name></author><entry><title type="html">[Blog] CSS Modifications</title><link href="https://woongchoi84.github.io/2020/01/15/post-blog-cssmodifications.html" rel="alternate" type="text/html" title="[Blog] CSS Modifications" /><published>2020-01-15T00:00:00+09:00</published><updated>2020-01-15T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/15/post-blog-cssmodifications</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/15/post-blog-cssmodifications.html">&lt;h1 id=&quot;head-color&quot;&gt;Head Color&lt;/h1&gt;
-
-&lt;h2 id=&quot;_sassdash_basecss-file&quot;&gt;‘_sass/dash/_base.css’ file&lt;/h2&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h6&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color-blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color-red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;‘h1 { … }’ block is overwritten.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;list&quot;&gt;List&lt;/h1&gt;
-
-&lt;h2 id=&quot;_sassdash_basecss-file-1&quot;&gt;‘_sass/dash/_base.css’ file&lt;/h2&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/**
- * Lists
- */&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ol&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spacing-unit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list-item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color-ulist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;padding-left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
-  &lt;span class=&quot;err&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;ul,&lt;/span&gt;
-  &lt;span class=&quot;err&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;ol&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;‘ul { … }’ block is added.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;‘padding-left: 10px;’ is added in ‘li { … }’ block&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Woong</name></author><category term="Blog" /><summary type="html">Head Color</summary></entry><entry><title type="html">[Blog] Markdown &amp;amp; Option Test</title><link href="https://woongchoi84.github.io/2020/01/15/post-blog-markdowntest.html" rel="alternate" type="text/html" title="[Blog] Markdown &amp; Option Test" /><published>2020-01-15T00:00:00+09:00</published><updated>2020-01-15T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/15/post-blog-markdowntest</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/15/post-blog-markdowntest.html">&lt;h1 id=&quot;h1-heading-8-&quot;&gt;h1 Heading 8-)&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://woongchoi84.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://woongchoi84.github.io/" rel="alternate" type="text/html" /><updated>2020-01-16T16:51:10+09:00</updated><id>https://woongchoi84.github.io/feed.xml</id><title type="html">Woong’s Blog</title><subtitle>I'm a Creep; I'm a Weirdo.
+</subtitle><author><name>Woong</name></author><entry><title type="html">[Blog] Markdown &amp;amp; Option Test</title><link href="https://woongchoi84.github.io/2020/01/15/post-blog-markdowntest.html" rel="alternate" type="text/html" title="[Blog] Markdown &amp; Option Test" /><published>2020-01-15T00:00:00+09:00</published><updated>2020-01-15T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/15/post-blog-markdowntest</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/15/post-blog-markdowntest.html">&lt;h1 id=&quot;h1-heading-8-&quot;&gt;h1 Heading 8-)&lt;/h1&gt;
 &lt;h2 id=&quot;h2-heading&quot;&gt;h2 Heading&lt;/h2&gt;
 &lt;h3 id=&quot;h3-heading&quot;&gt;h3 Heading&lt;/h3&gt;
 &lt;h4 id=&quot;h4-heading&quot;&gt;h4 Heading&lt;/h4&gt;
@@ -323,65 +274,102 @@ with lazy continuation.&lt;/p&gt;
       &lt;p&gt;Footnote text. &lt;a href=&quot;#fnref:second&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:second:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Woong</name></author><category term="Blog" /><summary type="html">h1 Heading 8-) h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading</summary></entry><entry><title type="html">[Git] GitHub 사용법 (for Linux)</title><link href="https://woongchoi84.github.io/2020/01/15/post-productive-howtousegithub.html" rel="alternate" type="text/html" title="[Git] GitHub 사용법 (for Linux)" /><published>2020-01-15T00:00:00+09:00</published><updated>2020-01-15T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/15/post-productive-howtousegithub</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/15/post-productive-howtousegithub.html">&lt;h1 id=&quot;overall-contents&quot;&gt;Overall Contents&lt;/h1&gt;
+&lt;/div&gt;</content><author><name>Woong</name></author><category term="Blog" /><summary type="html">h1 Heading 8-) h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading</summary></entry><entry><title type="html">[Git] GitHub 사용법 (for Linux)</title><link href="https://woongchoi84.github.io/2020/01/15/post-productive-howtousegithub.html" rel="alternate" type="text/html" title="[Git] GitHub 사용법 (for Linux)" /><published>2020-01-15T00:00:00+09:00</published><updated>2020-01-15T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/15/post-productive-howtousegithub</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/15/post-productive-howtousegithub.html">&lt;h2&gt;.&lt;/h2&gt;
+
+&lt;h3 id=&quot;overall-contents&quot;&gt;Overall Contents&lt;/h3&gt;
+
 &lt;hr /&gt;
+
 &lt;ol&gt;
-  &lt;li&gt;https://github.com/ 에서 계정 만들기&lt;/li&gt;
-  &lt;li&gt;사이트에서 저장소 (리포지토리, repository) 만들기&lt;/li&gt;
-  &lt;li&gt;클라이언트 (리눅스) 에서 내 저장소와 연결 정보 만들기&lt;/li&gt;
-  &lt;li&gt;저장소에 파일 저장하기 (upload)&lt;/li&gt;
-  &lt;li&gt;저장소에서 파일 내려받기 (download)&lt;/li&gt;
-  &lt;li&gt;추가 사항!&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;https://github.com/ 에서 계정 만들기&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;사이트에서 저장소 (리포지토리, repository) 만들기&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;클라이언트 (리눅스) 에서 내 저장소와 연결 정보 만들기&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;저장소에 파일 저장하기 (upload)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;저장소에서 파일 내려받기 (download)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;추가 사항!&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;1-httpsgithubcom-에서-계정-만들기&quot;&gt;1. https://github.com/ 에서 계정 만들기&lt;/h2&gt;
+&lt;h2 id=&quot;-1&quot;&gt;.&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-httpsgithubcom-에서-계정-만들기&quot;&gt;1. https://github.com/ 에서 계정 만들기&lt;/h3&gt;
+
 &lt;hr /&gt;
-
-&lt;h3 id=&quot;--링크&quot;&gt;- 링크&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;https://github.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;--회원가입&quot;&gt;- 회원가입&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Sign In: 로그인&lt;/li&gt;
-  &lt;li&gt;Sign Out: 회원가입&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;https://github.com/&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;회원가입: Sign In - 로그인, Sign Up - 회원가입&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;2-사이트에서-저장소-리포지토리-repository-만들기&quot;&gt;2. 사이트에서 저장소 (리포지토리, repository) 만들기&lt;/h2&gt;
+&lt;h2 id=&quot;-2&quot;&gt;.&lt;/h2&gt;
+
+&lt;h3 id=&quot;2-사이트에서-저장소-리포지토리-repository-만들기&quot;&gt;2. 사이트에서 저장소 (리포지토리, repository) 만들기&lt;/h3&gt;
+
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;--사이트-화면에서-repositories-옆에-new-버튼-클릭&quot;&gt;- 사이트 화면에서 Repositories 옆에 New 버튼 클릭&lt;/h3&gt;
-
-&lt;h3 id=&quot;--저장소-repository-이름-선정&quot;&gt;- 저장소 (repository) 이름 선정&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;사이트 화면에서 Repositories 옆에 New 버튼 클릭&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;저장소 (repository) 이름 선정&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.ibb.co/yFDJwvk/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;woongchoi84/&lt;/code&gt; 오른쪽 위치에 원하는 &lt;code class=&quot;highlighter-rouge&quot;&gt;저장소 이름&lt;/code&gt;을 적어넣고, 맨 아래 &lt;code class=&quot;highlighter-rouge&quot;&gt;Create repository&lt;/code&gt; 버튼 클릭&lt;/p&gt;
-
-&lt;p&gt;(아래에 몇가지 옵션이 있는데 건드리지 말자.)&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; 오른쪽 위치에 원하는 &lt;code class=&quot;highlighter-rouge&quot;&gt;저장소 이름&lt;/code&gt;을 적어넣고, 맨 아래 &lt;code class=&quot;highlighter-rouge&quot;&gt;Create repository&lt;/code&gt; 버튼 클릭&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Public: 공개 (아무나 볼수 있다, 무료)&lt;/li&gt;
-  &lt;li&gt;Private: 비공개 (1개 공짜, 그 이상은 유료)&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;아래에 몇가지 옵션이 있는데 건드리지 말자.)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Public: 공개 (아무나 볼수 있다, 무료)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Private: 비공개 (1개 공짜, 그 이상은 유료)&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;3-클라이언트-리눅스-에서-내-저장소와-연결-정보-만들기&quot;&gt;3. 클라이언트 (리눅스) 에서 내 저장소와 연결 정보 만들기&lt;/h2&gt;
+&lt;h2 id=&quot;-3&quot;&gt;.&lt;/h2&gt;
+
+&lt;h3 id=&quot;3-클라이언트-리눅스-에서-내-저장소와-연결-정보-만들기&quot;&gt;3. 클라이언트 (리눅스) 에서 내 저장소와 연결 정보 만들기&lt;/h3&gt;
+
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;git-설치-install&quot;&gt;Git 설치 (Install)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Git 설치 (Install)&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;git
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;터미널에 &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; 입력 시 설치하라고 나오면&lt;/p&gt;
 
-&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;sudo apt-get install git
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;커맨드를 통해 설치 할 수 있다.&lt;/p&gt;
 
-&lt;h3 id=&quot;git-초기-설정-환경-설정&quot;&gt;Git 초기 설정 (환경 설정)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Git 초기 설정 (환경 설정)&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;git config --global user.name woongchoi84
 git config --global user.email woongchoi84@gmail.com
@@ -389,15 +377,21 @@ git config --global --list
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;리눅스 입장에서는 내 깃허브 정보를 알리가 없다. 처음 한번 입력해주자!.&lt;/p&gt;
 
-&lt;h3 id=&quot;github의-저장소와-동기화&quot;&gt;GitHub의 저장소와 동기화&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;GitHub의 저장소와 동기화&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;git init
 git remote add origin https://github.com/woongchoi84/test
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;git init : 실행한 폴더에 &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; 폴더를 만든다. 이 안에 git에 필요한 정보들이 업데이트 된다.&lt;/li&gt;
-  &lt;li&gt;git remote  ~~ : https://github.com/&lt;code class=&quot;highlighter-rouge&quot;&gt;깃허브 아이디&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;저장소 이름&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;git init : 실행한 폴더에 &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; 폴더를 만든다. 이 안에 git에 필요한 정보들이 업데이트 된다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;git remote  ~~ : https://github.com/&lt;code class=&quot;highlighter-rouge&quot;&gt;깃허브 아이디&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;저장소 이름&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
@@ -407,7 +401,10 @@ git remote add origin https://github.com/woongchoi84/test
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git init&lt;/code&gt; 혹은 &lt;code class=&quot;highlighter-rouge&quot;&gt;git clone repo_url&lt;/code&gt; 등의 명령어를 사용하는 경우 &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; 폴더가 생기는데, 이게 하위 디렉토리 같은 곳에 있으면 문제가 된다.
 뒤에서 설명할 &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt; 혹은 &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt; 이 안되는 경우 리눅스 &lt;code class=&quot;highlighter-rouge&quot;&gt;tree&lt;/code&gt; 명령어를 통해 불필요한 &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; 폴더의 유무를 체크해보자!&lt;/p&gt;
 
-&lt;h2 id=&quot;4-저장소에-파일-저장하기-upload&quot;&gt;4. 저장소에 파일 저장하기 (upload)&lt;/h2&gt;
+&lt;h2 id=&quot;-4&quot;&gt;.&lt;/h2&gt;
+
+&lt;h3 id=&quot;4-저장소에-파일-저장하기-upload&quot;&gt;4. 저장소에 파일 저장하기 (upload)&lt;/h3&gt;
+
 &lt;hr /&gt;
 
 &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;git add .
@@ -415,39 +412,44 @@ git commit -m &quot;first commit&quot;
 git push -u origin master
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;git add : 저장소에 올릴 파일을 정하는 것 (&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;의 의미는 전체 파일)&lt;/li&gt;
-  &lt;li&gt;git commit : 저장소에 올리는데 설명을 붙여주는 것 (귀찮지만 꼭 해야한다)&lt;/li&gt;
-  &lt;li&gt;git push : 이 명령어를 통해 실제로 업로드&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt; : 저장소에 올릴 파일을 정하는 것 (&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;의 의미는 전체 파일)&lt;/p&gt;
 
-&lt;h2 id=&quot;5-저장소에서-파일-내려받기-download&quot;&gt;5. 저장소에서 파일 내려받기 (download)&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt; : 저장소에 올리는데 설명을 붙여주는 것 (귀찮지만 꼭 해야한다)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt; : 이 명령어를 통해 실제로 업로드&lt;/p&gt;
+
+&lt;h2 id=&quot;-5&quot;&gt;.&lt;/h2&gt;
+
+&lt;h3 id=&quot;5-저장소에서-파일-내려받기-download&quot;&gt;5. 저장소에서 파일 내려받기 (download)&lt;/h3&gt;
+
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;첫번째-방법-git-clone&quot;&gt;첫번째 방법: git clone&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;첫번째 방법: git clone&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;git clone repo_url
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;이 명령어는 위에서 했던 과정없이 바로 수행 가능하며 단지 깃허브 저장소 (repo_url)에서 파일을 복사해온다.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;유용한 팁 (., 점 유무에 주의)&lt;/p&gt;
-&lt;/blockquote&gt;
-
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone repo_url .&lt;/code&gt; : 저장소에 있는 파일을 현재 경로로 가져온다.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;유용한 팁 (., 점 유무에 주의)&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone repo_url .&lt;/code&gt; : 저장소에 있는 파일을 현재 경로로 가져온다. 리눅스 명령어와 비교해보면 &lt;code class=&quot;highlighter-rouge&quot;&gt;cp -rf ../source_dir/* .&lt;/code&gt;와 같은 동작이 수행된다.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone repo_url&lt;/code&gt;   : 저장소 폴더 통째로 현재 경로로 가져온다. 즉, 저장소 이름의 폴더명이 현재 경로에 생성된다. 리눅스 명령어와 비교해보면 &lt;code class=&quot;highlighter-rouge&quot;&gt;cp -rf ../source_dir .&lt;/code&gt;와 같은 동작이 수행된다.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;두번째 방법: git pull&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;리눅스 명령어와 비교해보면 &lt;code class=&quot;highlighter-rouge&quot;&gt;cp -rf ../source_dir/* .&lt;/code&gt;와 같은 동작이 수행된다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone repo_url&lt;/code&gt;   : 저장소 폴더 통째로 현재 경로로 가져온다. 즉, 저장소 이름의 폴더명이 현재 경로에 생성된다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;리눅스 명령어와 비교해보면 &lt;code class=&quot;highlighter-rouge&quot;&gt;cp -rf ../source_dir .&lt;/code&gt;와 같은 동작이 수행된다.&lt;/p&gt;
-
-&lt;h3 id=&quot;두번째-방법-git-pull&quot;&gt;두번째 방법: git pull&lt;/h3&gt;
 
 &lt;p&gt;이 명령어를 쓰게되는 상황은 다음과 같다.&lt;/p&gt;
 
@@ -471,16 +473,22 @@ git push -u origin master
 
 &lt;p&gt;작업 중인 경로에 가서 위 명령어를 치면 &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; 폴더의 내용을 기반으로 저장소와 내 로컬 (리눅스) 간의 연결 정보를 파악하여 저장소에 있는 최신 코드로 내 로컬 파일들을 업데이트한다.&lt;/p&gt;
 
-&lt;h2 id=&quot;6-추가-사항&quot;&gt;6. 추가 사항!&lt;/h2&gt;
+&lt;h2 id=&quot;-6&quot;&gt;.&lt;/h2&gt;
 
-&lt;h3 id=&quot;추가-사항을-넣은-이유는-다음과-같은-상황-때문이다&quot;&gt;추가 사항을 넣은 이유는 다음과 같은 상황 때문이다.&lt;/h3&gt;
+&lt;h3 id=&quot;6-추가-사항&quot;&gt;6. 추가 사항!&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;추가 사항을 넣은 이유는 다음과 같은 상황 때문이다.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;두괄식으로 요약하자면,&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;작업: 로컬에서 코드 개발&lt;/li&gt;
-  &lt;li&gt;업로드: 로컬 (리눅스) -&amp;gt; 저장소&lt;/li&gt;
-  &lt;li&gt;다운로드: 저장소 -&amp;gt; 로컬 (리눅스)&lt;/li&gt;
+  &lt;li&gt;업로드: 로컬 (리눅스) –  저장소&lt;/li&gt;
+  &lt;li&gt;다운로드: 저장소 –  로컬 (리눅스)&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;위의 1-2-3-1-2-3-1-2-3-… 순서가 어그러지면 문제가 발생한다.&lt;/p&gt;
@@ -549,14 +557,17 @@ git push -u origin master
 
 &lt;p&gt;다음에는 윈도우 설치 프로그램 기준 깃 사용법에 대해 포스팅 할 예정이다.&lt;/p&gt;
 
-&lt;h3 id=&quot;마지막-팁&quot;&gt;마지막 팁&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;마지막 팁&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;필자의 경우 편의를 위해 아래와 같이 ‘alias’ (단축키) 설정해두고 사용한다.&lt;/p&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;alias	&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;gitpush&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'git add .; git commit -m &quot;w/o comment&quot;; git push -u origin +master;'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Woong</name></author><category term="Git" /><summary type="html">Overall Contents https://github.com/ 에서 계정 만들기 사이트에서 저장소 (리포지토리, repository) 만들기 클라이언트 (리눅스) 에서 내 저장소와 연결 정보 만들기 저장소에 파일 저장하기 (upload) 저장소에서 파일 내려받기 (download) 추가 사항!</summary></entry><entry><title type="html">[Linux] WSL (Windows-Subsystem-for-Linux) 기반 개발 환경 구축 : 01 (Not Completed)</title><link href="https://woongchoi84.github.io/2020/01/14/post-linux-wsl-00.html" rel="alternate" type="text/html" title="[Linux] WSL (Windows-Subsystem-for-Linux) 기반 개발 환경 구축 : 01 (Not Completed)" /><published>2020-01-14T00:00:00+09:00</published><updated>2020-01-14T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/14/post-linux-wsl-00</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/14/post-linux-wsl-00.html">&lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2019/06/08/05/48/linux-4259595_1280.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Woong</name></author><category term="Git" /><summary type="html">.</summary></entry><entry><title type="html">[Linux] WSL (Windows-Subsystem-for-Linux) 기반 개발 환경 구축 : 01 (Not Completed)</title><link href="https://woongchoi84.github.io/2020/01/14/post-linux-wsl-00.html" rel="alternate" type="text/html" title="[Linux] WSL (Windows-Subsystem-for-Linux) 기반 개발 환경 구축 : 01 (Not Completed)" /><published>2020-01-14T00:00:00+09:00</published><updated>2020-01-14T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/14/post-linux-wsl-00</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/14/post-linux-wsl-00.html">&lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2019/06/08/05/48/linux-4259595_1280.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;설치-windows-10-이상에서만-가능&quot;&gt;설치 (Windows 10 이상에서만 가능!)&lt;/h1&gt;
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;1-사전-준비&quot;&gt;1. 사전 준비&lt;/h2&gt;
 
@@ -576,108 +587,97 @@ git push -u origin master
 
 &lt;p&gt;&lt;img src=&quot;https://i.ibb.co/ZS8grC5/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Woong</name></author><category term="Linux" /><category term="Setup" /><category term="WSL" /><summary type="html"></summary></entry><entry><title type="html">[Productive] GitHub Clone 할 때 폴더 째 혹은 내용물만 가져오기</title><link href="https://woongchoi84.github.io/2020/01/14/post-productive-gitclone.html" rel="alternate" type="text/html" title="[Productive] GitHub Clone 할 때 폴더 째 혹은 내용물만 가져오기" /><published>2020-01-14T00:00:00+09:00</published><updated>2020-01-14T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/14/post-productive-gitclone</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/14/post-productive-gitclone.html">&lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2014/07/15/23/36/github-394322_1280.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;git-clone-의-두가지-방법&quot;&gt;git clone 의 두가지 방법&lt;/h1&gt;
+&lt;h3 id=&quot;레포지토리-폴더-통째로-가져오기&quot;&gt;레포지토리 폴더 통째로 가져오기&lt;/h3&gt;
 
-&lt;h2 id=&quot;레포지토리-폴더-통째로-가져오기&quot;&gt;레포지토리 폴더 통째로 가져오기&lt;/h2&gt;
+&lt;hr /&gt;
 
 &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;git clone repository
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;이렇게 하면 Repository이름의 폴더가 &lt;code class=&quot;highlighter-rouge&quot;&gt;git clone&lt;/code&gt;을 실행한 &lt;code class=&quot;highlighter-rouge&quot;&gt;Path&lt;/code&gt;로 복사된다.&lt;/p&gt;
 
-&lt;h2 id=&quot;레포지토리-내용물만-가져오기&quot;&gt;레포지토리 내용물만 가져오기&lt;/h2&gt;
+&lt;h2&gt;.&lt;/h2&gt;
+
+&lt;h3 id=&quot;레포지토리-내용물만-가져오기&quot;&gt;레포지토리 내용물만 가져오기&lt;/h3&gt;
+
+&lt;hr /&gt;
 
 &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;git clone repository &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;이렇게 하면 현재 &lt;code class=&quot;highlighter-rouge&quot;&gt;Path&lt;/code&gt;로 Repository 의 내용물만 복사된다.&lt;/p&gt;
+&lt;p&gt;이렇게 하면 현재 &lt;code class=&quot;highlighter-rouge&quot;&gt;Path&lt;/code&gt;로 Repository 의 내용물만 복사된다. &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; 하나 찍었을 뿐인데…&lt;/p&gt;</content><author><name>Woong</name></author><category term="Productive" /><category term="Git" /><summary type="html"></summary></entry><entry><title type="html">[Music] 오지 오스본 (Ozzy Osbourne) - 2020 신보 (엘튼존 피처링)</title><link href="https://woongchoi84.github.io/2020/01/12/post-music-OzzyOsbourne.html" rel="alternate" type="text/html" title="[Music] 오지 오스본 (Ozzy Osbourne) - 2020 신보 (엘튼존 피처링)" /><published>2020-01-12T00:00:00+09:00</published><updated>2020-01-12T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/12/post-music-OzzyOsbourne</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/12/post-music-OzzyOsbourne.html">&lt;p&gt;&lt;img src=&quot;http://fetch.rigvedawiki.net/f/_cache/fetchfile/d/da/dac12c44e6b9c1eb7ea5848250bd8775.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;점하나 찍었을 뿐인데…&lt;/p&gt;</content><author><name>Woong</name></author><category term="Productive" /><category term="Git" /><summary type="html"></summary></entry><entry><title type="html">[Music] 오지 오스본 (Ozzy Osbourne) - 2020 신보 (엘튼존 피처링)</title><link href="https://woongchoi84.github.io/2020/01/12/post-music-OzzyOsbourne.html" rel="alternate" type="text/html" title="[Music] 오지 오스본 (Ozzy Osbourne) - 2020 신보 (엘튼존 피처링)" /><published>2020-01-12T00:00:00+09:00</published><updated>2020-01-12T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/12/post-music-OzzyOsbourne</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/12/post-music-OzzyOsbourne.html">&lt;p&gt;&lt;img src=&quot;http://fetch.rigvedawiki.net/f/_cache/fetchfile/d/da/dac12c44e6b9c1eb7ea5848250bd8775.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;.&lt;/h2&gt;
 
-&lt;h1 id=&quot;오지-오스본-ozzy-osbourne&quot;&gt;오지 오스본 (Ozzy Osbourne)&lt;/h1&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;불공평한 인생의 선두주자&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;“인사가 만사”다 라는 이야기가 있듯이&lt;/p&gt;
-
-&lt;p&gt;걸출한 기타리스트와 인연이 있는 아저씨이다.&lt;/p&gt;
-
-&lt;p&gt;라이브에서 삑사리가 많이나고&lt;/p&gt;
-
-&lt;p&gt;호불호가 갈리는 목소리이지만&lt;/p&gt;
-
-&lt;p&gt;무심한듯 뱉어내는 목소리가 빠져들게 한다.&lt;/p&gt;
-
-&lt;p&gt;아래는 나무위키에 있는 재미있는 내용이다.&lt;/p&gt;
+&lt;h3 id=&quot;오지-오스본-ozzy-osbourne&quot;&gt;오지 오스본 (Ozzy Osbourne)&lt;/h3&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;치사량에 가까울 정도로 술과 약물을&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;불공평한 인생의 선두주자&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;복용해 왔음에도&lt;/p&gt;
+&lt;p&gt;“인사가 만사”다 라는 이야기가 있듯이 걸출한 기타리스트와 인연이 있는 아저씨이다.
+라이브에서 삑사리가 많이나고 호불호가 갈리는 목소리이지만
+무심한듯 뱉어내는 목소리가 빠져들게 한다. 아래는 나무위키에 있는 재미있는 내용이다.&lt;/p&gt;
 
-&lt;p&gt;현재까지 살아있는 점이 놀라우며,&lt;/p&gt;
+&lt;p&gt;치사량에 가까울 정도로 술과 약물을 복용해 왔음에도 
+현재까지 살아있는 점이 놀라우며, 과학자들이 그의 유전자를 바탕으로 연구를 진행하고 있다고 한다. 
+연구가 잘되면 오지 오스본 덕분의 숙취해소, 인류 장수의 길이 열릴 수도 있다. (…)&lt;/p&gt;
 
-&lt;p&gt;과학자들이 그의 유전자를 바탕으로&lt;/p&gt;
+&lt;p&gt;그리고 연구 결과 실제로 특수한 유전자가 발견되었다. 
+역시 비범한 사람이었다. 
+단점은 오지 오스본의 유전자는 
+카페인에 치명적일 정도로 약하다고 한다. 
+평생동안 약은 손에 대지도 않고 
+건강을 챙기면서 살았음에도 불구하고,
+암에 걸려 사망한 디오 옹과 비교하면 
+참 인생 불공평하다는 의견도 있다.&lt;/p&gt;
 
-&lt;p&gt;연구를 진행하고 있다고 한다.&lt;/p&gt;
-
-&lt;p&gt;연구가 잘되면 오지 오스본 덕분의 숙취해소,&lt;/p&gt;
-
-&lt;p&gt;인류 장수의 길이 열릴 수도 있다. (…)&lt;/p&gt;
-
-&lt;p&gt;그리고 연구 결과&lt;/p&gt;
-
-&lt;p&gt;실제로 특수한 유전자가 발견되었다.&lt;/p&gt;
-
-&lt;p&gt;역시 비범한 사람이었다.&lt;/p&gt;
-
-&lt;p&gt;단점은 오지 오스본의 유전자는&lt;/p&gt;
-
-&lt;p&gt;카페인에 치명적일 정도로 약하다고 한다.&lt;/p&gt;
-
-&lt;p&gt;평생동안 약은 손에 대지도 않고&lt;/p&gt;
-
-&lt;p&gt;건강을 챙기면서 살았음에도 불구하고,&lt;/p&gt;
-
-&lt;p&gt;암에 걸려 사망한 디오 옹과 비교하면&lt;/p&gt;
-
-&lt;p&gt;참 인생 불공평하다는 의견도 있다.&lt;/p&gt;
-
-&lt;p&gt;출처: &lt;a href=&quot;https://namu.wiki/w/%EC%98%A4%EC%A7%80%20%EC%98%A4%EC%8A%A4%EB%B3%B8&quot;&gt;나무위키&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;출처: &lt;a href=&quot;https://namu.wiki/w/%EC%98%A4%EC%A7%80%20%EC%98%A4%EC%8A%A4%EB%B3%B8&quot;&gt;나무위키&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;release-song&quot;&gt;Release Song&lt;/h2&gt;
+&lt;h2 id=&quot;-1&quot;&gt;.&lt;/h2&gt;
 
-&lt;h3 id=&quot;ozzy-osbourne---ordinary-man&quot;&gt;Ozzy Osbourne - Ordinary Man&lt;/h3&gt;
+&lt;h3 id=&quot;release-song&quot;&gt;Release Song&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ozzy Osbourne - Ordinary Man&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/fWUxkZEuJG4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;엘튼 존 (Elton John) 이 피쳐링 했다고 하는데…&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;iframe width=&quot;1280&quot; height=&quot;720&quot; src=&quot;https://www.youtube.com/embed/fWUxkZEuJG4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;무심한 그의 목소리에 빠져보자!&lt;/p&gt;</content><author><name>Woong</name></author><category term="Music" /><summary type="html"></summary></entry><entry><title type="html">[Python] Django: Django로 홈페이지를 만들어보자 #1</title><link href="https://woongchoi84.github.io/2020/01/12/post-python-django00.html" rel="alternate" type="text/html" title="[Python] Django: Django로 홈페이지를 만들어보자 #1" /><published>2020-01-12T00:00:00+09:00</published><updated>2020-01-12T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/12/post-python-django00</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/12/post-python-django00.html">&lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2014/05/07/15/19/django-339744_1280.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;django장고-설치-및-초기-설정&quot;&gt;Django(장고) 설치 및 초기 설정&lt;/h1&gt;
+&lt;h3 id=&quot;django장고-설치-및-초기-설정&quot;&gt;Django(장고) 설치 및 초기 설정&lt;/h3&gt;
+&lt;hr /&gt;
 
-&lt;h2 id=&quot;django-설치-wsl-기준-ubuntu로-봐도-무방할듯&quot;&gt;django 설치 (WSL 기준, Ubuntu로 봐도 무방할듯)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;django 설치 (WSL 기준, Ubuntu로 봐도 무방할듯)&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;pip3 &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;django 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;의외로 시간이 좀 걸린다.&lt;/p&gt;
 
-&lt;h2 id=&quot;새-프로젝트-만들기&quot;&gt;새 프로젝트 만들기&lt;/h2&gt;
-
-&lt;h3 id=&quot;main-이라는-프로젝트-생성-이름은-정하기-나름&quot;&gt;main 이라는 프로젝트 생성 (이름은 정하기 나름!)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;새 프로젝트 만들기&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;django-admin startproject main
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;main 이라는 프로젝트 생성 (이름은 정하기 나름!)&lt;/p&gt;
 
 &lt;p&gt;아래와 같은 Tree 구조의 폴더가 생성된다.&lt;/p&gt;
 
@@ -690,7 +690,9 @@ git push -u origin master
 └── manage.py
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;app-생성&quot;&gt;App 생성&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;App 생성&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;manage.py&lt;/code&gt; 가 있는 main 폴더에서 다음 명령어 실행&lt;/p&gt;
 
@@ -699,9 +701,11 @@ git push -u origin master
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;timeline&lt;/code&gt;이라는 이름도 정하기 나름이다.&lt;/p&gt;
 
-&lt;h2 id=&quot;설정-파일-변경&quot;&gt;설정 파일 변경&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;설정 파일 변경&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&quot;mainmainsettingpy-수정&quot;&gt;‘main/main/setting.py’ 수정&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;main/main/setting.py&lt;/code&gt; 수정&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;INSTALLED_APPS&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
     &lt;span class=&quot;s&quot;&gt;'django.contrib.admin'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
@@ -724,7 +728,9 @@ git push -u origin master
 
 &lt;p&gt;위와 같이 주석이 달린 부분을 수정하자!&lt;/p&gt;
 
-&lt;h2 id=&quot;모델-timelinemodelpy-수정&quot;&gt;모델 (timeline/model.py) 수정&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;모델 (timeline/model.py) 수정&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.db&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.utils&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;timezone&lt;/span&gt;
@@ -739,17 +745,21 @@ git push -u origin master
 		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;모델이-변경되었음을-알리자&quot;&gt;모델이 변경되었음을 알리자&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;모델이 변경되었음을 알리자&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&quot;migration-실행&quot;&gt;Migration 실행&lt;/h3&gt;
+&lt;p&gt;Migration 실행&lt;/p&gt;
 
 &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;python3 manage.py makemigrations timeline
 &lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;python3 manage.py migrate
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;관리자-계정-추가&quot;&gt;관리자 계정 추가&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;관리자 계정 추가&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&quot;blogadminpy-파일-수정&quot;&gt;‘blog/admin.py’ 파일 수정&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;blog/admin.py&lt;/code&gt; 파일 수정&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.contrib&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;admin&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Post&lt;/span&gt;
@@ -757,7 +767,9 @@ git push -u origin master
 &lt;span class=&quot;n&quot;&gt;admin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;admin 계정 생성&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;admin&lt;/code&gt; 계정 생성&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;python3 manage.py createsuperuser
 python3 manage.py runserver
@@ -767,9 +779,11 @@ python3 manage.py runserver
 
 &lt;p&gt;아이디/메일주소/비번을 입력한다.&lt;/p&gt;
 
-&lt;h2 id=&quot;관리자-계정으로-새로운-포스트-작성&quot;&gt;관리자 계정으로 새로운 포스트 작성&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;관리자 계정으로 새로운 포스트 작성&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&quot;http1270018000admin-접속&quot;&gt;‘http://127.0.0.1:8000/admin’ 접속&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://127.0.0.1:8000/admin&lt;/code&gt; 접속&lt;/p&gt;
 
 &lt;p&gt;접속해서 Post 메뉴에서 새로운 Post를 추가해본다.&lt;/p&gt;
 
@@ -777,9 +791,11 @@ python3 manage.py runserver
 
 &lt;p&gt;위 그림과 같이 현재 시각이 잘 맞는지 확인!&lt;/p&gt;
 
-&lt;h2 id=&quot;메인-페이지-접속-시-반응하도록-수정&quot;&gt;메인 페이지 접속 시 반응하도록 수정&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;메인 페이지 접속 시 반응하도록 수정&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&quot;mainurlspy-수정&quot;&gt;‘main/urls.py’ 수정&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;main/urls.py&lt;/code&gt; 수정&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.contrib&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;admin&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.urls&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;include&lt;/span&gt;
@@ -790,7 +806,9 @@ python3 manage.py runserver
 &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;timelineurlspy-생성&quot;&gt;timeline/urls.py 생성&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;timeline/urls.py 생성&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.urls&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;views&lt;/span&gt;
@@ -800,7 +818,9 @@ python3 manage.py runserver
 &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;timelineviewspy-수정&quot;&gt;timeline/views.py 수정&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;timeline/views.py 수정&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.shortcuts&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.utils&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;timezone&lt;/span&gt;
@@ -811,11 +831,13 @@ python3 manage.py runserver
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'timeline/post_list.html'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'posts'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;timelinetemplatestimelinepost_listhtml-생성&quot;&gt;timeline/templates/timeline/post_list.html 생성&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;timeline/templates/timeline/post_list.html&lt;/code&gt; 생성&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/woongchoi84/django/blob/master/blog/templates/blog/post_list.html&quot;&gt;만들어둔 링크&lt;/a&gt;와 같이 수정&lt;/p&gt;
 
-&lt;h2 id=&quot;블루프린트---타임라인-가져오기&quot;&gt;&lt;a href=&quot;https://github.com/codrops/Blueprint-VerticalTimeline&quot;&gt;블루프린트 - 타임라인&lt;/a&gt; 가져오기&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/codrops/Blueprint-VerticalTimeline&quot;&gt;블루프린트 - 타임라인&lt;/a&gt; 가져오기&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;cd timeline
 mkdir static
@@ -823,11 +845,13 @@ cd static
 git clone https://github.com/codrops/Blueprint-VerticalTimeline.git .
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;페이지-확인&quot;&gt;페이지 확인&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;페이지 확인&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;python3 manage.py runserver
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;http://127.0.0.1:8000/&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://127.0.0.1:8000/&quot;&gt;http://127.0.0.1:8000/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;접속해보면 아래와 같이 나오는 것을 확인 할 수 있다.&lt;/p&gt;
 
@@ -839,41 +863,42 @@ git clone https://github.com/codrops/Blueprint-VerticalTimeline.git .
   &lt;p&gt;참고: &lt;a href=&quot;https://baejino.com/programing/django/how-to-start&quot;&gt;장고(django) 시작하기 in 우분투&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</content><author><name>Woong</name></author><category term="Python" /><category term="Crawling" /><summary type="html"></summary></entry><entry><title type="html">[Music] 플로트리(Floetry) - Live가 완벽한 R&amp;amp;B 여성 듀오</title><link href="https://woongchoi84.github.io/2020/01/11/post-music-Floetry.html" rel="alternate" type="text/html" title="[Music] 플로트리(Floetry) - Live가 완벽한 R&amp;B 여성 듀오" /><published>2020-01-11T00:00:00+09:00</published><updated>2020-01-11T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/11/post-music-Floetry</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/11/post-music-Floetry.html">&lt;p&gt;&lt;img src=&quot;https://i.ytimg.com/vi/pkb2mvw1Hcw/hqdefault.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;플로트리-floetry&quot;&gt;플로트리 (Floetry)&lt;/h1&gt;
+&lt;h2&gt;.&lt;/h2&gt;
+
+&lt;h3 id=&quot;플로트리-floetry&quot;&gt;플로트리 (Floetry)&lt;/h3&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;라이브가 앨범이랑 동일할 정도로 잘한다.&lt;/p&gt;
-
-&lt;p&gt;원래 이런 장르의 음악은 잘 안들었는데,&lt;/p&gt;
-
-&lt;p&gt;네오소울(?) 머시기로 불리는듯하다.&lt;/p&gt;
-
-&lt;hr /&gt;
+&lt;p&gt;라이브가 앨범이랑 동일할 정도로 잘한다. 
+원래 이런 장르의 음악은 잘 안들었는데,
+네오소울(?) 머시기로 불리는듯하다.&lt;/p&gt;
 
 &lt;p&gt;이 듀오는 영국 런던의 농구장에서 1994년경에 만났다고 한다.&lt;/p&gt;
 
-&lt;h2 id=&quot;favorite-songs&quot;&gt;Favorite Songs&lt;/h2&gt;
+&lt;h2 id=&quot;-1&quot;&gt;.&lt;/h2&gt;
 
-&lt;h3 id=&quot;1-floetry---its-getting-late&quot;&gt;1. Floetry - It’s Getting Late&lt;/h3&gt;
+&lt;h3 id=&quot;favorite-songs&quot;&gt;Favorite Songs&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Floetry - It’s Getting Late&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/HdW5GRjusWc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;hr /&gt;
 
 &lt;p&gt;가사는 길어서 링크로 남긴다.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://genius.com/Floetry-getting-late-lyrics&quot;&gt;가사 링크&lt;/a&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;2-floetry---butterflies&quot;&gt;2. Floetry - Butterflies&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Floetry - Butterflies&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/CAj2ZSmShCU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;매력적인 누나들이다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+  &lt;li&gt;매력적인 누나들이다.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;가사는 난해하다.&lt;/p&gt;
 
@@ -881,196 +906,198 @@ git clone https://github.com/codrops/Blueprint-VerticalTimeline.git .
 
 &lt;p&gt;마이클잭슨도 불렀다.&lt;/p&gt;
 
+&lt;h2 id=&quot;-2&quot;&gt;.&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;가사 및 해석&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+안에있는 나비들 안에있는 나비들
+
+Butterflies inside you give me butterflies inside
+
+안에있는 나비들 안에있는 나비들
+
+Butterflies inside you give me butterflies inside
+
+안에있는 나비들 안에있는 나비들
+
+Butterflies inside you give me butterflies inside
+
+당신이해야 할 일은 그냥 걸어 가서 지나가는 것뿐입니다
+
+All you gotta do is just walk away and pass me by
+
+너에게 인사하려고 할 때 내 미소를 인정하지 마
+
+Don't acknowledge my smile yea when I try to say hello to you
+
+내가하려고 할 때 내 전화에 응답하지 않으면
+
+And all you gotta do is not answer my calls when I'm tryna get through
+
+왜 그리고 내가 할 수있는 모든 것을 궁금하게하는 것은 한숨을 쉬고 싶어
+
+To keep me wondering why and all I can do is sigh I just wanna oh
+
+그냥 터치하고 키스하고 싶어
+
+I just want to touch and kiss
+
+그리고 나는 오늘 밤 당신과 함께 할 수 있기를 바랍니다
+
+And I wish that I could be with you tonight
+
+넌 내게 나비를 줘
+
+You give me butterflies inside
+
+내부와 나는
+
+Inside and I
+
+내가 꿈꿔 야한다는 것
+
+All I gotta say is I must be dreaming
+
+캔트 진짜
+
+Cant be real
+
+당신은 나와 함께 여기 없습니다
+
+Your not here with me
+
+내 근처에서 널 느낄 수있어
+
+I can feel you near to me
+
+그래서 네가 우릴 맛보게 해줘
+
+So I caress you let you taste us
+
+그냥 행복하게 들려줘
+
+Just so blissful listen I would give anything
+
+내 꿈을 이루게 해줘 baby 넌 내게 나비를 줘
+
+Make my dream come true baby you give me butterflies
+
+그냥 터치하고 키스하고 싶어
+
+I just want to touch and kiss
+
+그리고 나는 오늘 밤 당신과 함께 할 수 있기를 바랍니다
+
+And I wish that I could be with you tonight
+
+넌 내게 나비를 줘
+
+You give me butterflies inside
+
+내부와 나는
+
+Inside and I
+
+그냥 터치하고 키스하고 싶어
+
+I just want to touch and kiss
+
+그리고 나는 오늘 밤 당신과 함께 할 수 있기를 바랍니다
+
+And I wish that I could be with you tonight
+
+넌 내게 나비를 줘
+
+You give me butterflies inside
+
+내부와 나는
+
+Inside and I
+
+당신이 내 손을 가져갈 경우 난 당신이 가벼운 아기를 안내 표시합니다
+
+If you will take my hand baby i will show you guide you to the light babe
+
+당신이 내 사랑이라면 난 당신을 사랑합니다
+
+If you will be my love baby I will love you
+
+시간이 끝날 때까지 사랑해
+
+Love you till the end of time
+
+그냥 터치하고 키스하고 싶어
+
+I just want to touch and kiss
+
+그리고 나는 오늘 밤 당신과 함께 할 수 있기를 바랍니다
+
+And I wish that I could be with you tonight
+
+넌 내게 나비를 줘
+
+You give me butterflies inside
+
+내부와 나는
+
+Inside and I
+
+그냥 터치하고 키스하고 싶어
+
+I just want to touch and kiss
+
+그리고 나는 오늘 밤 당신과 함께 할 수 있기를 바랍니다
+
+And I wish that I could be with you tonight
+
+넌 내게 나비를 줘
+
+You give me butterflies inside
+
+내부와 나는
+
+Inside and I
+
+그냥 터치하고 키스하고 싶어
+
+I just want to touch and kiss
+
+그리고 나는 오늘 밤 당신과 함께 할 수 있기를 바랍니다
+
+And I wish that I could be with you tonight
+
+넌 내게 나비를 줘
+
+You give me butterflies inside
+
+내부와 나는
+
+Inside and I
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Woong</name></author><category term="Music" /><summary type="html"></summary></entry><entry><title type="html">[Music] 누노 베텐코트 (Nuno Bettencourt) - 기타리스트, 베이시스트, 키보디스트, 작곡가, 보컬</title><link href="https://woongchoi84.github.io/2020/01/11/post-music-NunoBettencourt.html" rel="alternate" type="text/html" title="[Music] 누노 베텐코트 (Nuno Bettencourt) - 기타리스트, 베이시스트, 키보디스트, 작곡가, 보컬" /><published>2020-01-11T00:00:00+09:00</published><updated>2020-01-11T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/11/post-music-NunoBettencourt</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/11/post-music-NunoBettencourt.html">&lt;p&gt;&lt;img src=&quot;http://www3.pictures.zimbio.com/gi/Nuno+Bettencourt+Entertainment+Industry+Foundation+dQRrPaZbeeWl.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;.&lt;/h2&gt;
+
+&lt;h3 id=&quot;누노-베텐코트-nuno-bettencourt&quot;&gt;누노 베텐코트 (Nuno Bettencourt)&lt;/h3&gt;
+
 &lt;hr /&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;가사 및 해석&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;드럼빼고 다 해먹는 Extreme의 기타리스트 Nuno.
+뭔가 사기 캐릭터 같다…
+아래는 Extreme의 노래가 아닌 Nuno 혼자 만든 앨범!
+개인적으로 익스트림 노래보다 좋다.&lt;/p&gt;
 
-&lt;p&gt;안에있는 나비들 안에있는 나비들&lt;/p&gt;
+&lt;h2 id=&quot;-1&quot;&gt;.&lt;/h2&gt;
 
-&lt;p&gt;Butterflies inside you give me butterflies inside&lt;/p&gt;
-
-&lt;p&gt;안에있는 나비들 안에있는 나비들&lt;/p&gt;
-
-&lt;p&gt;Butterflies inside you give me butterflies inside&lt;/p&gt;
-
-&lt;p&gt;안에있는 나비들 안에있는 나비들&lt;/p&gt;
-
-&lt;p&gt;Butterflies inside you give me butterflies inside&lt;/p&gt;
-
-&lt;p&gt;당신이해야 할 일은 그냥 걸어 가서 지나가는 것뿐입니다&lt;/p&gt;
-
-&lt;p&gt;All you gotta do is just walk away and pass me by&lt;/p&gt;
-
-&lt;p&gt;너에게 인사하려고 할 때 내 미소를 인정하지 마&lt;/p&gt;
-
-&lt;p&gt;Don’t acknowledge my smile yea when I try to say hello to you&lt;/p&gt;
-
-&lt;p&gt;내가하려고 할 때 내 전화에 응답하지 않으면&lt;/p&gt;
-
-&lt;p&gt;And all you gotta do is not answer my calls when I’m tryna get through&lt;/p&gt;
-
-&lt;p&gt;왜 그리고 내가 할 수있는 모든 것을 궁금하게하는 것은 한숨을 쉬고 싶어&lt;/p&gt;
-
-&lt;p&gt;To keep me wondering why and all I can do is sigh I just wanna oh&lt;/p&gt;
-
-&lt;p&gt;그냥 터치하고 키스하고 싶어&lt;/p&gt;
-
-&lt;p&gt;I just want to touch and kiss&lt;/p&gt;
-
-&lt;p&gt;그리고 나는 오늘 밤 당신과 함께 할 수 있기를 바랍니다&lt;/p&gt;
-
-&lt;p&gt;And I wish that I could be with you tonight&lt;/p&gt;
-
-&lt;p&gt;넌 내게 나비를 줘&lt;/p&gt;
-
-&lt;p&gt;You give me butterflies inside&lt;/p&gt;
-
-&lt;p&gt;내부와 나는&lt;/p&gt;
-
-&lt;p&gt;Inside and I&lt;/p&gt;
-
-&lt;p&gt;내가 꿈꿔 야한다는 것&lt;/p&gt;
-
-&lt;p&gt;All I gotta say is I must be dreaming&lt;/p&gt;
-
-&lt;p&gt;캔트 진짜&lt;/p&gt;
-
-&lt;p&gt;Cant be real&lt;/p&gt;
-
-&lt;p&gt;당신은 나와 함께 여기 없습니다&lt;/p&gt;
-
-&lt;p&gt;Your not here with me&lt;/p&gt;
-
-&lt;p&gt;내 근처에서 널 느낄 수있어&lt;/p&gt;
-
-&lt;p&gt;I can feel you near to me&lt;/p&gt;
-
-&lt;p&gt;그래서 네가 우릴 맛보게 해줘&lt;/p&gt;
-
-&lt;p&gt;So I caress you let you taste us&lt;/p&gt;
-
-&lt;p&gt;그냥 행복하게 들려줘&lt;/p&gt;
-
-&lt;p&gt;Just so blissful listen I would give anything&lt;/p&gt;
-
-&lt;p&gt;내 꿈을 이루게 해줘 baby 넌 내게 나비를 줘&lt;/p&gt;
-
-&lt;p&gt;Make my dream come true baby you give me butterflies&lt;/p&gt;
-
-&lt;p&gt;그냥 터치하고 키스하고 싶어&lt;/p&gt;
-
-&lt;p&gt;I just want to touch and kiss&lt;/p&gt;
-
-&lt;p&gt;그리고 나는 오늘 밤 당신과 함께 할 수 있기를 바랍니다&lt;/p&gt;
-
-&lt;p&gt;And I wish that I could be with you tonight&lt;/p&gt;
-
-&lt;p&gt;넌 내게 나비를 줘&lt;/p&gt;
-
-&lt;p&gt;You give me butterflies inside&lt;/p&gt;
-
-&lt;p&gt;내부와 나는&lt;/p&gt;
-
-&lt;p&gt;Inside and I&lt;/p&gt;
-
-&lt;p&gt;그냥 터치하고 키스하고 싶어&lt;/p&gt;
-
-&lt;p&gt;I just want to touch and kiss&lt;/p&gt;
-
-&lt;p&gt;그리고 나는 오늘 밤 당신과 함께 할 수 있기를 바랍니다&lt;/p&gt;
-
-&lt;p&gt;And I wish that I could be with you tonight&lt;/p&gt;
-
-&lt;p&gt;넌 내게 나비를 줘&lt;/p&gt;
-
-&lt;p&gt;You give me butterflies inside&lt;/p&gt;
-
-&lt;p&gt;내부와 나는&lt;/p&gt;
-
-&lt;p&gt;Inside and I&lt;/p&gt;
-
-&lt;p&gt;당신이 내 손을 가져갈 경우 난 당신이 가벼운 아기를 안내 표시합니다&lt;/p&gt;
-
-&lt;p&gt;If you will take my hand baby i will show you guide you to the light babe&lt;/p&gt;
-
-&lt;p&gt;당신이 내 사랑이라면 난 당신을 사랑합니다&lt;/p&gt;
-
-&lt;p&gt;If you will be my love baby I will love you&lt;/p&gt;
-
-&lt;p&gt;시간이 끝날 때까지 사랑해&lt;/p&gt;
-
-&lt;p&gt;Love you till the end of time&lt;/p&gt;
-
-&lt;p&gt;그냥 터치하고 키스하고 싶어&lt;/p&gt;
-
-&lt;p&gt;I just want to touch and kiss&lt;/p&gt;
-
-&lt;p&gt;그리고 나는 오늘 밤 당신과 함께 할 수 있기를 바랍니다&lt;/p&gt;
-
-&lt;p&gt;And I wish that I could be with you tonight&lt;/p&gt;
-
-&lt;p&gt;넌 내게 나비를 줘&lt;/p&gt;
-
-&lt;p&gt;You give me butterflies inside&lt;/p&gt;
-
-&lt;p&gt;내부와 나는&lt;/p&gt;
-
-&lt;p&gt;Inside and I&lt;/p&gt;
-
-&lt;p&gt;그냥 터치하고 키스하고 싶어&lt;/p&gt;
-
-&lt;p&gt;I just want to touch and kiss&lt;/p&gt;
-
-&lt;p&gt;그리고 나는 오늘 밤 당신과 함께 할 수 있기를 바랍니다&lt;/p&gt;
-
-&lt;p&gt;And I wish that I could be with you tonight&lt;/p&gt;
-
-&lt;p&gt;넌 내게 나비를 줘&lt;/p&gt;
-
-&lt;p&gt;You give me butterflies inside&lt;/p&gt;
-
-&lt;p&gt;내부와 나는&lt;/p&gt;
-
-&lt;p&gt;Inside and I&lt;/p&gt;
-
-&lt;p&gt;그냥 터치하고 키스하고 싶어&lt;/p&gt;
-
-&lt;p&gt;I just want to touch and kiss&lt;/p&gt;
-
-&lt;p&gt;그리고 나는 오늘 밤 당신과 함께 할 수 있기를 바랍니다&lt;/p&gt;
-
-&lt;p&gt;And I wish that I could be with you tonight&lt;/p&gt;
-
-&lt;p&gt;넌 내게 나비를 줘&lt;/p&gt;
-
-&lt;p&gt;You give me butterflies inside&lt;/p&gt;
-
-&lt;p&gt;내부와 나는&lt;/p&gt;
-
-&lt;p&gt;Inside and I&lt;/p&gt;</content><author><name>Woong</name></author><category term="Music" /><summary type="html"></summary></entry><entry><title type="html">[Music] 누노 베텐코트 (Nuno Bettencourt) - 기타리스트, 베이시스트, 키보디스트, 작곡가, 보컬</title><link href="https://woongchoi84.github.io/2020/01/11/post-music-NunoBettencourt.html" rel="alternate" type="text/html" title="[Music] 누노 베텐코트 (Nuno Bettencourt) - 기타리스트, 베이시스트, 키보디스트, 작곡가, 보컬" /><published>2020-01-11T00:00:00+09:00</published><updated>2020-01-11T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/11/post-music-NunoBettencourt</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/11/post-music-NunoBettencourt.html">&lt;p&gt;&lt;img src=&quot;http://www3.pictures.zimbio.com/gi/Nuno+Bettencourt+Entertainment+Industry+Foundation+dQRrPaZbeeWl.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;누노-베텐코트-nuno-bettencourt&quot;&gt;누노 베텐코트 (Nuno Bettencourt)&lt;/h1&gt;
-
+&lt;h3 id=&quot;favorite-songs&quot;&gt;Favorite Songs&lt;/h3&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;드럼빼고 다 해먹는&lt;/p&gt;
-
-&lt;p&gt;Extreme의 기타리스트 Nuno.&lt;/p&gt;
-
-&lt;p&gt;뭔가 사기 캐릭터 같다…&lt;/p&gt;
-
-&lt;p&gt;아래는 Extreme의 노래가 아닌&lt;/p&gt;
-
-&lt;p&gt;Nuno 혼자 만든 앨범!&lt;/p&gt;
-
-&lt;p&gt;개인적으로 익스트림 노래보다 좋다.&lt;/p&gt;
-
-&lt;h1 id=&quot;favorite-songs&quot;&gt;Favorite Songs&lt;/h1&gt;
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;ordinary-day&quot;&gt;Ordinary Day&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ordinary Day&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/XlojV4jUXtA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -1115,11 +1142,11 @@ this prayer i sing for you
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;population-1---nuno-bettencourt-full-album&quot;&gt;Population 1 - Nuno Bettencourt [Full Album]&lt;/h2&gt;
+&lt;h3 id=&quot;population-1---nuno-bettencourt-full-album&quot;&gt;Population 1 - Nuno Bettencourt [Full Album]&lt;/h3&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;1번(Flow) 트랙도 좋다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+  &lt;li&gt;1번(Flow) 트랙도 좋다.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/BMrBXM4Qmck&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -1138,26 +1165,56 @@ this prayer i sing for you
   &lt;li&gt;50:31 - Sick Punk&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Woong</name></author><category term="Music" /><summary type="html"></summary></entry><entry><title type="html">[Blog] 구글 서치 콘솔 실적(?)</title><link href="https://woongchoi84.github.io/2020/01/10/post-blog-%EA%B5%AC%EA%B8%80%EC%84%9C%EC%B9%98%EC%BD%98%EC%86%94%EA%B2%B0%EA%B3%BC.html" rel="alternate" type="text/html" title="[Blog] 구글 서치 콘솔 실적(?)" /><published>2020-01-10T00:00:00+09:00</published><updated>2020-01-10T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/10/post-blog-%EA%B5%AC%EA%B8%80%EC%84%9C%EC%B9%98%EC%BD%98%EC%86%94%EA%B2%B0%EA%B3%BC</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/10/post-blog-%EA%B5%AC%EA%B8%80%EC%84%9C%EC%B9%98%EC%BD%98%EC%86%94%EA%B2%B0%EA%B3%BC.html">&lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_1280.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;누군가-내-블로그를-엿보기-시작한다&quot;&gt;누군가 내 블로그를 엿보기 시작한다…&lt;/h1&gt;
+&lt;h2&gt;.&lt;/h2&gt;
 
-&lt;h2 id=&quot;구글-검색-엔진-등록법&quot;&gt;구글 검색 엔진 등록법&lt;/h2&gt;
+&lt;h3 id=&quot;누군가-내-블로그를-엿보기-시작한다&quot;&gt;누군가 내 블로그를 엿보기 시작한다…&lt;/h3&gt;
+&lt;hr /&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;[Blog] Jekyll + github.io 블로그의 구글 검색 엔진 등록&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+  &lt;li&gt;구글 검색 엔진 등록법 ([Blog] Jekyll + github.io 블로그의 구글 검색 엔진 등록)&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://woongchoi84.github.io/post/post-blog-%EA%B5%AC%EA%B8%80%EC%84%9C%EC%B9%98%EC%BD%98%EC%86%94/&quot;&gt;지난 포스팅 링크&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;구글 검색 엔진 등록 후 약 5일이 지난 지금,&lt;/p&gt;
+&lt;p&gt;구글 검색 엔진 등록 후 약 5일이 지난 지금,구글에서 알아봐주기 시작했다.
+초반에는 ‘데이터 분석까지 며칠이 소요됩니다(?)’라는 식의 화면만 나왔던 것 같은데 말이다.&lt;/p&gt;
 
-&lt;p&gt;구글에서 알아봐주기 시작했다.&lt;/p&gt;
-
-&lt;p&gt;초반에는 ‘데이터 분석까지 며칠이 소요됩니다(?)’라는 식의&lt;/p&gt;
-
-&lt;p&gt;화면만 나왔던 것 같은데 말이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;구글-서치-콘솔-실적&quot;&gt;구글 서치 콘솔 실적&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;구글 서치 콘솔 실적&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.ibb.co/1mTH1Kp/googlesearchconsole.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;4명은 마우스를 잘못 누른것일까?&lt;/p&gt;</content><author><name>Woong</name></author><category term="Blog" /><category term="Google" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;4명은 마우스를 잘못 누른것일까?&lt;/p&gt;</content><author><name>Woong</name></author><category term="Blog" /><category term="Google" /><summary type="html"></summary></entry><entry><title type="html">[Blog] 지킬 (jekyll) 블로그에 유튜브 삽입</title><link href="https://woongchoi84.github.io/2020/01/10/post-blog-%EC%A7%80%ED%82%AC%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%9C%A0%ED%8A%9C%EB%B8%8C%EC%82%BD%EC%9E%85.html" rel="alternate" type="text/html" title="[Blog] 지킬 (jekyll) 블로그에 유튜브 삽입" /><published>2020-01-10T00:00:00+09:00</published><updated>2020-01-10T00:00:00+09:00</updated><id>https://woongchoi84.github.io/2020/01/10/post-blog-%EC%A7%80%ED%82%AC%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%9C%A0%ED%8A%9C%EB%B8%8C%EC%82%BD%EC%9E%85</id><content type="html" xml:base="https://woongchoi84.github.io/2020/01/10/post-blog-%EC%A7%80%ED%82%AC%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%9C%A0%ED%8A%9C%EB%B8%8C%EC%82%BD%EC%9E%85.html">&lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2017/06/23/02/35/youtube-2433301_1280.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4&gt;.&lt;/h4&gt;
+
+&lt;h3 id=&quot;테스트1---로컬-1270014000-안되고-깃-푸쉬하면-잘됨&quot;&gt;테스트1 - 로컬 (127.0.0.1:4000/ 안되고 깃 푸쉬하면 잘됨)&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;깃허브에서 지킬(jekyll)을 사용한 블로그에  영상 삽입하기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://devlog.jwgo.kr/2018/04/16/how-to-insert-youtube-into-jekyll/&quot;&gt;테스트에 참조한 링크1&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/216_wkEgPg4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;로컬에서는 화면은 정상으로 보이는데, 플레이버튼을 누르면 재생이 안된다.&lt;/p&gt;
+
+&lt;p&gt;웹상에서는 정상동작하는 것 확인!&lt;/p&gt;
+
+&lt;h3 id=&quot;테스트2&quot;&gt;테스트2&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Jekyll YouTube Embed Plugin · GitHub&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gist.github.com/joelverhagen/1805814&quot;&gt;테스트에 참조한 링크2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;이 방법도 로컬에서는 화면은 정상으로 보이는데, 플레이버튼을 누르면 재생이 안된다.&lt;/p&gt;
+
+&lt;p&gt;웹상에서도 안됨!&lt;/p&gt;
+
+&lt;p&gt;(뭔가 빼먹은 것 같지만 일단 되는 방법이 있으니 스킵해야겠다.)&lt;/p&gt;</content><author><name>Woong</name></author><category term="Blog" /><category term="Jekyll" /><summary type="html"></summary></entry></feed>

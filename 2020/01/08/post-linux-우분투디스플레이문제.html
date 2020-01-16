@@ -19,7 +19,7 @@
 {"@type":"BlogPosting","url":"https://woongchoi84.github.io/2020/01/08/post-linux-%EC%9A%B0%EB%B6%84%ED%88%AC%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4%EB%AC%B8%EC%A0%9C.html","headline":"[Linux] 우분투 관련 디스플레이 문제 해결방법","dateModified":"2020-01-08T00:00:00+09:00","datePublished":"2020-01-08T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://woongchoi84.github.io/2020/01/08/post-linux-%EC%9A%B0%EB%B6%84%ED%88%AC%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4%EB%AC%B8%EC%A0%9C.html"},"author":{"@type":"Person","name":"Woong"},"description":"I’m a Creep; I’m a Weirdo.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://woongchoi84.github.io/feed.xml" title="Woong's Blog" /><link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Serif+KR|Noto+Sans+KR|Nanum+Myeongjo|Nanum+Pen+Script|Sunflower|Cute+Font|Nanum+Brush+Script|Do+Hyeon|Black+Han+Sans|Gaegu|Gamja+Flower|Poor+Story|Hi+Melody|Black+And+White+Picture|Jua|Song+Myung|Stylish|Yeon+Sung" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://woongchoi84.github.io/feed.xml" title="Woong's Blog" /><link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono|Nanum+Myeongjo:400|Nanum+Myeongjo:400,700,800" rel="stylesheet" type="text/css">
 </head>
 <body><div class="site-header">
   <div class="wrapper">
@@ -54,48 +54,57 @@ I'm a Creep; I'm a Weirdo.
   
   <p><img src="https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_1280.jpg" alt="" /></p>
 
-<h1 id="ubuntu-host에서의-문제-해결">Ubuntu (Host)에서의 문제 해결</h1>
+<h2>.</h2>
 
-<h2 id="gvim-실행-시-e233-에러">gVIM 실행 시 E233(?) 에러</h2>
+<h3 id="ubuntu-host에서의-문제-해결">Ubuntu (Host)에서의 문제 해결</h3>
+<hr />
 
-<p>그래픽 드라이버 (nvidia) 재설치로 해결함</p>
+<ul>
+  <li>gVIM 실행 시 E233(?) 에러</li>
+</ul>
 
-<p>아래는 드라이버 설치 &gt; gvim 설치 했을 때 에러가 나서</p>
+<p>그래픽 드라이버 (nvidia) 재설치로 해결함.</p>
 
-<p>드라이버를 지우고 재설치하는 과정이다.</p>
+<p>아래는 드라이버 설치 &gt; gvim 설치 했을 때 에러가 나서 드라이버를 지우고 재설치하는 과정이다.</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="nb">sudo </span>apt <span class="nt">--purge</span> autoremove nvidia<span class="k">*</span>
 <span class="gp">$</span><span class="nb">sudo </span>ubuntu-drivers autoinstall
 </code></pre></div></div>
 
+<h2 id="-1">.</h2>
+
+<h3 id="window-client에서의-문제-해결">Window (Client)에서의 문제 해결</h3>
 <hr />
 
-<h1 id="window-client에서의-문제-해결">Window (Client)에서의 문제 해결</h1>
-
-<h2 id="ssh-display-문제">SSH Display 문제</h2>
+<ul>
+  <li>SSH Display 문제</li>
+</ul>
 
 <p><img src="https://i.ibb.co/hg3Z6zJ/putty-Setupfor-Jupyter.png" alt="" /></p>
 
-<blockquote>
-  <p>위의 왼쪽 그림처럼 putty 설정</p>
-</blockquote>
+<p>위의 왼쪽 그림처럼 putty 설정</p>
 
-<h2 id="주피터-노트북-or-랩-환경-구성">주피터 노트북 (or 랩) 환경 구성</h2>
+<h2 id="-2">.</h2>
+
+<h3 id="주피터-노트북-or-랩-환경-구성">주피터 노트북 (or 랩) 환경 구성</h3>
 
 <p>해당 작업은 GitHub Setup 폴더에 추가해뒀다.</p>
 
-<blockquote>
-  <p>위의 오른쪽 그림처럼 putty 설정</p>
-</blockquote>
-
 <ul>
+  <li>위의 오른쪽 그림처럼 putty 설정</li>
+</ul>
+
+<ol>
   <li>Source port: 8888</li>
   <li>Destination: localhost:0.0</li>
-</ul>
+</ol>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span>jupyter notebook <span class="nt">--generate-config</span>
 <span class="gp">$</span>jupyter notebook password
 </code></pre></div></div>
+
+<p>해당 코드는 브라우저에서 localhost:8888 접속시 터미널에서 <code class="highlighter-rouge">jupyter notebook</code> 실행 때 나오는 보안 코드를 사용하지 않고,
+직접 할당한 비밀번호로 접속하는 설정임을 기억하자.</p>
 
 </div>
 
@@ -147,8 +156,8 @@ I'm a Creep; I'm a Weirdo.
     
       <li>
         <h3>
-          <a href="/2020/01/15/post-blog-cssmodifications.html">
-            [Blog] CSS Modifications
+          <a href="/2020/01/14/post-productive-gitclone.html">
+            [Productive] GitHub Clone 할 때 폴더 째 혹은 내용물만 가져오기
           </a>
         </h3>
       </li>
@@ -161,7 +170,7 @@ I'm a Creep; I'm a Weirdo.
 
   
   <h2>all tags</h2>
-  <div class="tag-cloud"><a href="/tag/blog/" class="set-5">Blog</a> <a href="/tag/clip/" class="set-1">Clip</a> <a href="/tag/crawling/" class="set-1">Crawling</a> <a href="/tag/debug/" class="set-1">Debug</a> <a href="/tag/engineer/" class="set-1">Engineer</a> <a href="/tag/git/" class="set-1">Git</a> <a href="/tag/google/" class="set-1">Google</a> <a href="/tag/jekyll/" class="set-1">Jekyll</a> <a href="/tag/linux/" class="set-5">Linux</a> <a href="/tag/music/" class="set-3">Music</a> <a href="/tag/ppt/" class="set-1">PPT</a> <a href="/tag/place/" class="set-1">Place</a> <a href="/tag/productive/" class="set-2">Productive</a> <a href="/tag/python/" class="set-1">Python</a> <a href="/tag/setup/" class="set-4">Setup</a> <a href="/tag/wsl/" class="set-1">WSL</a> <a href="/tag/windows/" class="set-1">Windows</a></div>
+  <div class="tag-cloud"><a href="/tag/blog/" class="set-4">Blog</a> <a href="/tag/clip/" class="set-1">Clip</a> <a href="/tag/crawling/" class="set-1">Crawling</a> <a href="/tag/debug/" class="set-1">Debug</a> <a href="/tag/engineer/" class="set-1">Engineer</a> <a href="/tag/git/" class="set-1">Git</a> <a href="/tag/google/" class="set-1">Google</a> <a href="/tag/jekyll/" class="set-1">Jekyll</a> <a href="/tag/linux/" class="set-5">Linux</a> <a href="/tag/music/" class="set-3">Music</a> <a href="/tag/ppt/" class="set-1">PPT</a> <a href="/tag/place/" class="set-1">Place</a> <a href="/tag/productive/" class="set-2">Productive</a> <a href="/tag/python/" class="set-1">Python</a> <a href="/tag/setup/" class="set-4">Setup</a> <a href="/tag/wsl/" class="set-1">WSL</a> <a href="/tag/windows/" class="set-1">Windows</a></div>
   
 
 

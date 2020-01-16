@@ -19,7 +19,7 @@
 {"@type":"BlogPosting","url":"https://woongchoi84.github.io/2020/01/09/post-linux-CentOS%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4%EB%AC%B8%EC%A0%9C.html","headline":"[Linux] CentOS: Xlib extension RANDR mission on display","dateModified":"2020-01-09T00:00:00+09:00","datePublished":"2020-01-09T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://woongchoi84.github.io/2020/01/09/post-linux-CentOS%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4%EB%AC%B8%EC%A0%9C.html"},"author":{"@type":"Person","name":"Woong"},"description":"I’m a Creep; I’m a Weirdo.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://woongchoi84.github.io/feed.xml" title="Woong's Blog" /><link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Serif+KR|Noto+Sans+KR|Nanum+Myeongjo|Nanum+Pen+Script|Sunflower|Cute+Font|Nanum+Brush+Script|Do+Hyeon|Black+Han+Sans|Gaegu|Gamja+Flower|Poor+Story|Hi+Melody|Black+And+White+Picture|Jua|Song+Myung|Stylish|Yeon+Sung" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://woongchoi84.github.io/feed.xml" title="Woong's Blog" /><link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono|Nanum+Myeongjo:400|Nanum+Myeongjo:400,700,800" rel="stylesheet" type="text/css">
 </head>
 <body><div class="site-header">
   <div class="wrapper">
@@ -54,41 +54,46 @@ I'm a Creep; I'm a Weirdo.
   
   <p><img src="https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_1280.jpg" alt="" /></p>
 
-<h1 id="xlib-extension-randr-missing-on-display-에러">Xlib: extension “RANDR” missing on display 에러</h1>
+<h2>.</h2>
+
+<h3 id="xlib-extension-randr-missing-on-display-에러">Xlib: extension “RANDR” missing on display 에러</h3>
+<hr />
 
 <p>putty + Xming 조합으로 해결하였다.</p>
 
-<h3 id="host-display">Host $DISPLAY</h3>
+<ul>
+  <li>Host <code class="highlighter-rouge">$DISPLAY</code></li>
+</ul>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="nb">echo</span> <span class="nv">$DISPLAY</span>
 <span class="go">localhost:10.0
 </span></code></pre></div></div>
+<p>터미널에서 DISPLAY 환경변수(<code class="highlighter-rouge">$DISPLAY</code>)를 확인해보면 <code class="highlighter-rouge">localhost:10.0</code> 이다</p>
 
-<p>터미널에서 DISPLAY 환경변수를 확인해보면</p>
-
-<p><code class="highlighter-rouge">localhost:10.0</code> 이다</p>
-
-<p>xming 트레이아이콘에 마우스를 올려보면</p>
-
-<p>아래와 같다.</p>
+<ul>
+  <li>xming 트레이아이콘에 마우스를 올려보면 아래와 같다.</li>
+</ul>
 
 <p><img src="https://i.ibb.co/dGVRmWs/xmingtray.png" alt="" /></p>
 
-<h3 id="이유는-모르겠지만-putty는-xming에-맞추자">이유는 모르겠지만 putty는 xming에 맞추자!</h3>
-
-<p>그냥 putty설정에서</p>
+<ul>
+  <li>
+    <p>이유는 모르겠지만 putty는 xming에 맞추자!</p>
+  </li>
+  <li>
+    <p>그냥 putty설정에서</p>
+  </li>
+</ul>
 
 <p><img src="https://i.ibb.co/CnLNMN1/centos-Putty.png" alt="" /></p>
 
-<p>localhost:0.0으로 잡아주고 실행하면</p>
+<p><code class="highlighter-rouge">localhost:0.0</code>으로 잡아주고 실행하면 에러 메시지가 사라진다.</p>
 
-<p>에러 메시지가 사라진다.</p>
+<p>`/etc/ssh/ssh_config’의 X11 Forward 옵션은 건드리지 않았다.</p>
 
-<p>`/etc/ssh/ssh_config’의</p>
-
-<p>X11 Forward 옵션은 건드리지 않았다.</p>
-
-<hr />
+<blockquote>
+  <p>복잡하다! 될때까지 해보자!</p>
+</blockquote>
 
 </div>
 
@@ -140,8 +145,8 @@ I'm a Creep; I'm a Weirdo.
     
       <li>
         <h3>
-          <a href="/2020/01/15/post-blog-cssmodifications.html">
-            [Blog] CSS Modifications
+          <a href="/2020/01/14/post-productive-gitclone.html">
+            [Productive] GitHub Clone 할 때 폴더 째 혹은 내용물만 가져오기
           </a>
         </h3>
       </li>
@@ -154,7 +159,7 @@ I'm a Creep; I'm a Weirdo.
 
   
   <h2>all tags</h2>
-  <div class="tag-cloud"><a href="/tag/blog/" class="set-5">Blog</a> <a href="/tag/clip/" class="set-1">Clip</a> <a href="/tag/crawling/" class="set-1">Crawling</a> <a href="/tag/debug/" class="set-1">Debug</a> <a href="/tag/engineer/" class="set-1">Engineer</a> <a href="/tag/git/" class="set-1">Git</a> <a href="/tag/google/" class="set-1">Google</a> <a href="/tag/jekyll/" class="set-1">Jekyll</a> <a href="/tag/linux/" class="set-5">Linux</a> <a href="/tag/music/" class="set-3">Music</a> <a href="/tag/ppt/" class="set-1">PPT</a> <a href="/tag/place/" class="set-1">Place</a> <a href="/tag/productive/" class="set-2">Productive</a> <a href="/tag/python/" class="set-1">Python</a> <a href="/tag/setup/" class="set-4">Setup</a> <a href="/tag/wsl/" class="set-1">WSL</a> <a href="/tag/windows/" class="set-1">Windows</a></div>
+  <div class="tag-cloud"><a href="/tag/blog/" class="set-4">Blog</a> <a href="/tag/clip/" class="set-1">Clip</a> <a href="/tag/crawling/" class="set-1">Crawling</a> <a href="/tag/debug/" class="set-1">Debug</a> <a href="/tag/engineer/" class="set-1">Engineer</a> <a href="/tag/git/" class="set-1">Git</a> <a href="/tag/google/" class="set-1">Google</a> <a href="/tag/jekyll/" class="set-1">Jekyll</a> <a href="/tag/linux/" class="set-5">Linux</a> <a href="/tag/music/" class="set-3">Music</a> <a href="/tag/ppt/" class="set-1">PPT</a> <a href="/tag/place/" class="set-1">Place</a> <a href="/tag/productive/" class="set-2">Productive</a> <a href="/tag/python/" class="set-1">Python</a> <a href="/tag/setup/" class="set-4">Setup</a> <a href="/tag/wsl/" class="set-1">WSL</a> <a href="/tag/windows/" class="set-1">Windows</a></div>
   
 
 
