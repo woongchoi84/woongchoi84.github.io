@@ -4762,6 +4762,13 @@ pre {
   .theme--light .post-title {
     color: #000000; }
 
+.recent-post {
+  font-family: "Nanum Pen Script";
+  color: gray;
+  margin-bottom: 4px;
+  font-size: 24px;
+  text-align: left; }
+
 .post-description {
   margin-top: 1em;
   font-family: "Nanum Myeongjo";
@@ -4897,14 +4904,15 @@ pre {
       margin-left: 2em; }
 
 .post-link-wrapper {
-  font-family: "Nanum Myeongjo";
+  font-family: "NanumSquareB";
   margin-bottom: 1.1em; }
   .post-link-wrapper > .post-link {
-    font-family: "Nanum Myeongjo";
-    font-weight: 700;
+    font-family: "NanumSquareB";
+    font-weight: 400;
     font-size: 19.2px; }
   .post-link-wrapper > .post-meta {
-    font-size: 14px; }
+    font-family: "NanumSquare";
+    font-size: 8.4px; }
     .theme--dark .post-link-wrapper > .post-meta {
       color: #1E2227; }
     .theme--light .post-link-wrapper > .post-meta {
@@ -4966,7 +4974,7 @@ pre {
       color: white; }
 
 .pagination {
-  font-size: 16px;
+  font-size: 12.8px;
   font-family: "NanumSquareB";
   margin: 1em 0; }
   .pagination > a, .pagination > span {
